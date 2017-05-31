@@ -1,0 +1,3668 @@
+[Defaults]
+command.time = 15
+command.buffer.time = 1
+
+;-| AI |------------------------------------------------------
+[Command]
+name = "CPU1"
+command = U, D, F
+time = 1
+
+[Command]
+name = "CPU2"
+command = U, B, F
+time = 1
+
+[Command]
+name = "CPU3"
+command = U, D, D
+time = 1
+
+[Command]
+name = "CPU4"
+command = F, B, U
+time = 1
+
+[Command]
+name = "CPU5"
+command = U, F, U, B
+time = 1
+
+[Command]
+name = "CPU6"
+command = U, D, B
+time = 1
+
+[Command]
+name = "CPU7"
+command = F, F, B
+time = 1
+
+[Command]
+name = "CPU8"
+command = U, D, U
+time = 1
+
+[Command]
+name = "CPU9"
+command = F, B, B
+time = 1
+
+[Command]
+name = "CPU10"
+command = F, F, B, B
+time = 1
+
+[Command]
+name = "CPU11"
+command = U, U, F
+time = 1
+
+[Command]
+name = "CPU12"
+command = U, B, B
+time = 1
+
+[Command]
+name = "CPU13"
+command = U, B, F, F
+time = 1
+
+[Command]
+name = "CPU14"
+command = U, F, B, U
+time = 1
+
+[Command]
+name = "CPU15"
+command = U, B, F, U
+time = 1
+
+[Command]
+name = "CPU16"
+command = U, B, B, B
+time = 1
+
+[Command]
+name = "CPU17"
+command = U, D, B, F
+time = 1
+
+[Command]
+name = "CPU18"
+command = U, D, B, D
+time = 1
+
+[Command]
+name = "CPU19"
+command = U, D, F, U
+time = 1
+
+[Command]
+name = "CPU20"
+command = U, D, U, B
+time = 1
+
+[Command]
+name = "CPU21"
+command = U, D, F, F
+time = 1
+
+[Command]
+name = "CPU22"
+command = F, F, F, F
+time = 1
+
+[Command]
+name = "CPU23"
+command = U, U, U, D
+time = 1
+
+[Command]
+name = "CPU24"
+command = B, B, B
+time = 1
+
+[Command]
+name = "CPU25"
+command = D, D, D, D
+time = 1
+
+[Command]
+name = "CPU26"
+command = D, D, D
+time = 1
+
+[Command]
+name = "CPU27"
+command = F, F, F
+time = 1
+
+[Command]
+name = "CPU28"
+command = U, U, U
+time = 1
+
+[Command]
+name = "CPU29"
+command = U, U, B, B
+time = 1
+
+[Command]
+name = "CPU30"
+command = D, D, F, F
+time = 1
+
+[Command]
+name = "CPU31"
+command = U, D, F, U, D
+time = 1
+
+[Command]
+name = "CPU32"
+command = U, B, F, U, D
+time = 1
+
+[Command]
+name = "CPU33"
+command = U, D, D, U, D
+time = 1
+
+[Command]
+name = "CPU34"
+command = F, B, U, U, D
+time = 1
+
+[Command]
+name = "CPU35"
+command = U, F, U, B, U, D
+time = 1
+
+[Command]
+name = "CPU36"
+command = U, D, B, U, D
+time = 1
+
+[Command]
+name = "CPU37"
+command = F, F, B, U, D
+time = 1
+
+[Command]
+name = "CPU38"
+command = U, D, U, U, D
+time = 1
+
+[Command]
+name = "CPU39"
+command = F, B, B, U, D
+time = 1
+
+[Command]
+name = "CPU40"
+command = F, F, B, B, U, D
+time = 1
+
+[Command]
+name = "CPU41"
+command = U, U, F, U, D
+time = 1
+
+[Command]
+name = "CPU42"
+command = U, B, B, U, D
+time = 1
+
+[Command]
+name = "CPU43"
+command = U, B, F, F, U, D
+time = 1
+
+[Command]
+name = "CPU44"
+command = U, F, B, U, U, D
+time = 1
+
+[Command]
+name = "CPU45"
+command = U, B, F, U, U, D
+time = 1
+
+[Command]
+name = "CPU46"
+command = U, B, B, B, U, D
+time = 1
+
+[Command]
+name = "CPU47"
+command = U, D, B, F, U, D
+time = 1
+
+[Command]
+name = "CPU48"
+command = U, D, B, D, U, D
+time = 1
+
+[Command]
+name = "CPU49"
+command = U, D, F, U, U, D
+time = 1
+
+[Command]
+name = "CPU50"
+command = U, D, U, B, U, D
+time = 1
+
+;-| Super Motions |--------------------------------------------------------
+
+[Command]
+name = "ShunGokuSatsu"
+command = x, x, F, a, z
+Time = 60
+
+[Command]
+name = "SA1(Heavy)"
+command = ~D, DF, F, D, DF, z
+time = 30
+
+[Command]
+name = "SA1(Heavy)"
+command = ~D, DF, F, D, DF, ~z
+time = 30
+
+[Command]
+name = "SA1(Medium)"
+command = ~D, DF, F, D, DF, y
+time = 30
+
+[Command]
+name = "SA1(Medium)"
+command = ~D, DF, F, D, DF, ~y
+time = 30
+
+[Command]
+name = "SA1(Light)"
+command = ~D, DF, F, D, DF, x
+time = 30
+
+[Command]
+name = "SA1(Light)"
+command = ~D, DF, F, D, DF, ~x
+time = 30
+
+[Command]
+name = "SA2(Heavy)"
+command = ~D, DF, F, D, DF, c
+time = 30
+
+[Command]
+name = "SA2(Heavy)"
+command = ~D, DF, F, D, DF, ~c
+time = 30
+
+[Command]
+name = "SA2(Medium)"
+command = ~D, DF, F, D, DF, b
+time = 30
+
+[Command]
+name = "SA2(Medium)"
+command = ~D, DF, F, D, DF, ~b
+time = 30
+
+[Command]
+name = "SA2(Light)"
+command = ~D, DF, F, D, DF, a
+time = 30
+
+[Command]
+name = "SA2(Light)"
+command = ~D, DF, F, D, DF, ~a
+time = 30
+
+[Command]
+name = "SA3(Heavy)"
+command = ~D, DB, B, D, DB, z
+time = 30
+
+[Command]
+name = "SA3(Heavy)"
+command = ~D, DB, B, D, DB, ~z
+time = 30
+
+[Command]
+name = "SA3(Medium)"
+command = ~D, DB, B, D, DB, y
+time = 30
+
+[Command]
+name = "SA3(Medium)"
+command = ~D, DB, B, D, DB, ~y
+time = 30
+
+[Command]
+name = "SA3(Light)"
+command = ~D, DB, B, D, DB, x
+time = 30
+
+[Command]
+name = "SA3(Light)"
+command = ~D, DB, B, D, DB, ~x
+time = 30
+
+;-| Special Motions |------------------------------------------------------
+
+[Command] 
+name = "JoudanSokutou(Heavy)"
+command = ~B, DB, D, DF, F, c
+Time = 15
+
+[Command] 
+name = "JoudanSokutou(Heavy)"
+command = ~B, DB, D, DF, F, ~c
+Time = 15
+
+[Command] 
+name = "JoudanSokutou(Medium)"
+command = ~B, DB, D, DF, F, b
+Time = 15
+
+[Command] 
+name = "JoudanSokutou(Medium)"
+command = ~B, DB, D, DF, F, ~b
+Time = 15
+
+[Command] 
+name = "JoudanSokutou(Light)"
+command = ~B, DB, D, DF, F, a
+Time = 15
+
+[Command] 
+name = "JoudanSokutou(Light)"
+command = ~B, DB, D, DF, F, ~a
+Time = 15
+
+[Command]
+name = "Ashura3(Heavy)"
+command = ~B, D, DB, c
+Time = 15
+
+[Command]
+name = "Ashura3(Heavy)"
+command = ~B, D, DB, ~c
+Time = 15
+
+[Command]
+name = "Ashura3(Medium)"
+command = ~B, D, DB, b
+Time = 15
+
+[Command]
+name = "Ashura3(Medium)"
+command = ~B, D, DB, ~b
+Time = 15
+
+[Command]
+name = "Ashura3(Light)"
+command = ~B, D, DB, a
+Time = 15
+
+[Command]
+name = "Ashura3(Light)"
+command = ~B, D, DB, ~a
+Time = 15
+
+[Command]
+name = "Ashura2(Heavy)"
+command = ~B, D, DB, z
+Time = 15
+
+[Command]
+name = "Ashura2(Heavy)"
+command = ~B, D, DB, ~z
+Time = 15
+
+[Command]
+name = "Ashura2(Medium)"
+command = ~B, D, DB, y
+Time = 15
+
+[Command]
+name = "Ashura2(Medium)"
+command = ~B, D, DB, ~y
+Time = 15
+
+[Command]
+name = "Ashura2(Light)"
+command = ~B, D, DB, x
+Time = 15
+
+[Command]
+name = "Ashura2(Light)"
+command = ~B, D, DB, ~x
+Time = 15
+
+[Command]
+name = "Ashura1(Heavy)"
+command = ~F, D, DF, c
+Time = 15
+
+[Command]
+name = "Ashura1(Heavy)"
+command = ~F, D, DF, ~c
+Time = 15
+
+[Command]
+name = "Ashura1(Medium)"
+command = ~F, D, DF, b
+Time = 15
+
+[Command]
+name = "Ashura1(Medium)"
+command = ~F, D, DF, ~b
+Time = 15
+
+[Command]
+name = "Ashura1(Light)"
+command = ~F, D, DF, a
+Time = 15
+
+[Command]
+name = "Ashura1(Light)"
+command = ~F, D, DF, ~a
+Time = 15
+
+[Command]
+name = "Shouryuuken(Heavy)"
+command = ~F, D, DF, z
+Time = 15
+
+[Command]
+name = "Shouryuuken(Heavy)"
+command = ~F, D, DF, ~z
+Time = 15
+
+[Command]
+name = "Shouryuuken(Medium)"
+command = ~F, D, DF, y
+Time = 15
+
+[Command]
+name = "Shouryuuken(Medium)"
+command = ~F, D, DF, ~y
+Time = 15
+
+[Command]
+name = "Shouryuuken(Light)"
+command = ~F, D, DF, x
+Time = 15
+
+[Command]
+name = "Shouryuuken(Light)"
+command = ~F, D, DF, ~x
+Time = 15
+
+[Command]
+name = "Tatsumaki(Heavy)"
+command = ~D, DB, B, c
+Time = 10
+
+[Command]
+name = "Tatsumaki(Heavy)"
+command = ~D, DB, B, ~c
+Time = 10
+
+[Command]
+name = "Tatsumaki(Medium)"
+command = ~D, DB, B, b
+Time = 10
+
+[Command]
+name = "Tatsumaki(Medium)"
+command = ~D, DB, B, ~b
+Time = 10
+
+[Command]
+name = "Tatsumaki(Light)"
+command = ~D, DB, B, a
+Time = 10
+
+[Command]
+name = "Tatsumaki(Light)"
+command = ~D, DB, B, ~a
+Time = 10
+
+[Command]
+name = "Hadouken(Heavy)"
+command = ~D, DF, F, z
+Time = 10
+
+[Command]
+name = "Hadouken(Heavy)"
+command = ~D, DF, F, ~z
+Time = 10
+
+[Command]
+name = "Hadouken(Medium)"
+command = ~D, DF, F, y
+Time = 10
+
+[Command]
+name = "Hadouken(Medium)"
+command = ~D, DF, F, ~y
+Time = 10
+
+[Command]
+name = "Hadouken(Light)"
+command = ~D, DF, F, x
+Time = 10
+
+[Command]
+name = "Hadouken(Light)"
+command = ~D, DF, F, ~x
+Time = 10
+
+;-| Double Tap |-----------------------------------------------------------
+[Command]
+name = "FF"     ;Required (do not remove)
+command = F, F
+time = 10
+
+[Command]
+name = "BB"     ;Required (do not remove)
+command = B, B
+time = 10
+
+[Command]
+name = "High Jump"
+command = $D, $U
+time = 3
+
+
+;-| 2/3 Button Combination |-----------------------------------------------
+[Command]
+name = "recovery";Required (do not remove)
+command = x+y
+time = 1
+
+[Command]
+name = "recovery"
+command = y+z
+time = 1
+
+[Command]
+name = "recovery"
+command = z+x
+time = 1
+
+[Command]
+name = "personal action"
+command = z+c
+time = 5
+
+[Command]
+name = "leap attack"
+command = y+b
+time = 5
+
+[Command]
+name = "throw"
+command = x+a
+time = 5
+
+;-| Single Button |---------------------------------------------------------
+
+[Command]
+name = "a"
+command = a
+time = 1
+
+[Command]
+name = "~a"
+command = ~a
+time = 1
+
+[Command]
+name = "/a"
+command = /a
+time = 1
+
+[Command]
+name = "b"
+command = b
+time = 1
+
+[Command]
+name = "~b"
+command = ~b
+time = 1
+
+[Command]
+name = "/b"
+command = /b
+time = 1
+
+[Command]
+name = "c"
+command = c
+time = 1
+
+[Command]
+name = "~c"
+command = ~c
+time = 1
+
+[Command]
+name = "/c"
+command = /c
+time = 1
+
+[Command]
+name = "x"
+command = x
+time = 1
+
+[Command]
+name = "~x"
+command = ~x
+time = 1
+
+[Command]
+name = "/x"
+command = /x
+time = 1
+
+[Command]
+name = "y"
+command = y
+time = 1
+
+[Command]
+name = "~y"
+command = ~y
+time = 1
+
+[Command]
+name = "/y"
+command = /y
+time = 1
+
+[Command]
+name = "z"
+command = z
+time = 1
+
+[Command]
+name = "~z"
+command = ~z
+time = 1
+
+[Command]
+name = "/z"
+command = /z
+time = 1
+
+[Command]
+name = "start"
+command = s
+time = 1
+
+;-| Hold Dir |--------------------------------------------------------------
+
+[Command]      
+name = "Fwd"
+command = F
+time = 1
+
+[Command]      
+name = "Down"
+command = D
+time = 1
+
+[Command]      
+name = "Up"
+command = U
+time = 1
+
+[Command]      
+name = "Back"
+command = B
+time = 1
+
+[Command]
+name = "holdfwd"   ;要求済み (キーの変更は可能ですが名前を変えたり無効にしてはいけません)
+command = /$F
+time = 1
+
+[Command]
+name = "holdback"  ;要求済み (キーの変更は可能ですが名前を変えたり無効にしてはいけません)
+command = /$B
+time = 1
+
+[Command]
+name = "holdup"    ;要求済み (キーの変更は可能ですが名前を変えたり無効にしてはいけません)
+command = /$U
+time = 1
+
+[Command]
+name = "holddown"  ;要求済み (キーの変更は可能ですが名前を変えたり無効にしてはいけません)
+command = /$D
+time = 1
+
+;------------------------------------------------------------------------------
+[Statedef -1]
+[State -1]
+type = VarSet
+triggerall = var(59) = 0
+triggerall = RoundState != 3
+trigger1  = command = "CPU1"
+trigger2  = command = "CPU2"
+trigger3  = command = "CPU3"
+trigger4  = command = "CPU4"
+trigger5  = command = "CPU5"
+trigger6  = command = "CPU6"
+trigger7  = command = "CPU7"
+trigger8  = command = "CPU8"
+trigger9  = command = "CPU9"
+trigger10  = command = "CPU10"
+trigger11  = command = "CPU11"
+trigger12  = command = "CPU12"
+trigger13  = command = "CPU13"
+trigger14  = command = "CPU14"
+trigger15  = command = "CPU15"
+trigger16  = command = "CPU16"
+trigger17  = command = "CPU17"
+trigger18  = command = "CPU18"
+trigger19  = command = "CPU19"
+trigger20  = command = "CPU20"
+trigger21  = command = "CPU21"
+trigger22  = command = "CPU22"
+trigger23  = command = "CPU23"
+trigger24  = command = "CPU24"
+trigger25  = command = "CPU25"
+trigger26  = command = "CPU26"
+trigger27  = command = "CPU27"
+trigger28  = command = "CPU28"
+trigger29  = command = "CPU29"
+trigger30  = command = "CPU30"
+trigger31  = command = "CPU31"
+trigger32  = command = "CPU32"
+trigger33  = command = "CPU33"
+trigger34  = command = "CPU34"
+trigger35  = command = "CPU35"
+trigger36  = command = "CPU36"
+trigger37  = command = "CPU37"
+trigger38  = command = "CPU38"
+trigger39  = command = "CPU39"
+trigger40  = command = "CPU40"
+trigger41  = command = "CPU41"
+trigger42  = command = "CPU42"
+trigger43  = command = "CPU43"
+trigger44  = command = "CPU44"
+trigger45  = command = "CPU45"
+trigger46  = command = "CPU46"
+trigger47  = command = "CPU47"
+trigger48  = command = "CPU48"
+trigger49  = command = "CPU49"
+trigger50  = command = "CPU50"
+var(59) = 1
+;-| AI |--------------------------------------------------------
+
+;----------------------------------AI----------------------------------
+[State -1]
+type = ChangeState
+value = 12400
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = (var(0) = 0 || var(17) = 3)
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = Power >= 880
+;---------------------------------
+trigger1 = (StateNo = 284 && Anim = 284 && AnimTime = 0)
+trigger1 = NumTarget(280)
+trigger1 = Target(280),StateNo = 5011
+;---------------------------------
+trigger2 = StateNo = 432 && var(19) = 59
+trigger2 = NumTarget(430)
+trigger2 = Target(430),StateNo = 5000 || Target(430),StateNo = 5010
+trigger2 = var(23) = 1
+;---------------------------------
+trigger3 = StateNo = 808 && Anim = 808 && AnimTime = 0
+trigger3 = NumTarget(805)
+trigger3 = Target(805),StateNo = 5011
+;---------------------------------
+trigger4 = (StateNo = 11202 && var(19) = 59)
+trigger4 = NumTarget(11200)
+;---------------------------------
+trigger5 = (StateNo = 11312 && var(19) = 59)
+trigger5 = NumTarget(11310)
+trigger5 = Target(11310),StateType = S || Target(11310),StateType = C
+;---------------------------------
+trigger6 = ((StateNo = [5121, 5122]) && var(8) = 1)
+trigger6 = P2BodyDist X < 30 * Const(Size.XScale)
+trigger6 = P2MoveType = A
+
+;-------------------------------------
+[State -1]
+type = ChangeState
+value = 12200
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = (var(0) = 0 || var(17) = 2)
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = Power >= 1280
+triggerall = P2BodyDist X < 40 * Const(Size.XScale)
+triggerall = P2StateType = S || P2StateType = C
+;---------------------------------
+trigger1 = NumTarget(290) + NumTarget(300) = 0
+trigger1 = var(1) != [0, 5]
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = P2MoveType = A
+trigger1 = GameTime%30 = 0
+;---------------------------------
+trigger2 = NumTarget(290) + NumTarget(300)
+trigger2 = (StateNo = 292 || StateNo = 302) && var(19) = 59
+;---------------------------------
+trigger3 = StateNo = 801 && AnimElemTime(2) = 0
+trigger3 = GameTime%3 = 0
+;---------------------------------
+trigger4 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger4 = var(19) = 56
+trigger4 = GameTime%3 = 0
+;---------------------------------
+trigger5 = ((StateNo = [5121, 5122]) && var(8) = 1)
+trigger5 = P2MoveType = A
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 12000
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(0) = 0 || var(17) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = Power >= 1120
+;---------------------------------
+trigger1 = (StateNo = 284 && Anim = 284 && AnimTime = 0)
+trigger1 = NumTarget(280)
+trigger1 = Target(280),StateNo = 5011
+;---------------------------------
+trigger2 = StateNo = 432 && var(19) = 59
+trigger2 = NumTarget(430)
+trigger2 = Target(430),StateNo = 5000 || Target(430),StateNo = 5010
+trigger2 = var(23) = 1
+;---------------------------------
+trigger3 = (StateNo = 1001 || StateNo = 1051 || StateNo = 1101) && time = [10, 19]
+trigger3 = (EnemyNear,StateNo = [5000, 5001]) || (EnemyNear,StateNo = [5010, 5011])
+trigger3 = Helper(1010),StateNo = 1013
+;---------------------------------
+trigger4 = (StateNo = 11312 && var(19) = 59)
+trigger4 = NumTarget(11310)
+;---------------------------------
+trigger5 = (StateNo = 11422 && var(19) = 59)
+trigger5 = NumTarget(11421)
+;---------------------------------
+trigger6 = (StateNo = 11442 && var(19) = 59)
+trigger6 = NumTarget(11441)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11950
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+trigger1 = !NumTarget
+trigger1 = ((Ctrl && StateType != A) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26]))
+trigger1 = P2MoveType = A
+trigger1 = P2BodyDist X < 50 * Const(Size.XScale)
+trigger1 = BackEdgeBodyDist >= 100 * Const(Size.XScale)
+trigger1 = (GameTime+facing)%10 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11800
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+trigger1 = ((StateNo = [5121, 5122]) && var(8) = 1)
+trigger1 = P2BodyDist X < 50 * Const(Size.XScale)
+trigger1 = P2MoveType = A
+trigger1 = (GameTime+facing)%10 = 5
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11500 + 20 * (GameTime%3)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+trigger1 = StateNo = 50 || StateNo = 70
+trigger1 = Vel X > 0
+trigger1 = Abs(Vel Y) < 1 * Const(Size.YScale)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11440
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2StateType = S || P2StateType = C
+;---------------------------------
+trigger1 = var(19) = 59
+trigger1 = StateNo = 252 || StateNo =282 || StateNo = 422 || StateNo = 442
+trigger1 = NumTarget(250) + NumTarget(280) + NumTarget(420) + NumTarget(440)
+trigger1 = P2BodyDist X >= 30 * Const(Size.XScale)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11420
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = var(19) = 59
+trigger1 = StateNo = 252 || StateNo =282 || StateNo = 422 || StateNo = 442
+trigger1 = NumTarget(250) + NumTarget(280) + NumTarget(420) + NumTarget(440)
+trigger1 = Target,StateType = C
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11400
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = var(19) = 57
+trigger1 = StateNo = 252 || StateNo = 282 || StateNo = 422 || StateNo = 442
+trigger1 = NumTarget(250) + NumTarget(280) + NumTarget(420) + NumTarget(440)
+trigger1 = Target,StateType = S
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+
+;=====================================================================
+[State -1]
+type = VarSet
+fvar(18) = 1
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = fvar(18) = 0
+;------------------------------------------------------------
+trigger1 = NumTarget(11402)
+trigger1 = Target(11402),Pos Y > -40 * Const(Size.YScale)
+trigger1 = Target(11402),Vel Y > 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11300
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = fvar(18) >= TeamSide
+;---------------------------------
+trigger1 = NumTarget(11402)
+trigger1 = StateNo = 25 && time > 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 11200
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = ((StateNo = [5121, 5122]) && var(8) = 1)
+trigger1 = P2BodyDist X < 50 * Const(Size.XScale)
+trigger1 = P2MoveType = A
+;---------------------------------
+trigger2 = StateNo = 10252 && var(19) = 59
+trigger2 = NumTarget(10250)
+trigger2 = Target(10250),StateNo = 5000 || Target(10250),StateNo = 5010 || Target(10250),StateNo = 5020
+;---------------------------------
+trigger3 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger3 = var(19) = 57
+trigger3 = P2BodyDist X < 30 * Const(Size.XScale)
+
+;=====================================================================
+[State -1]
+type = VarSet
+fvar(18) = 1
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = fvar(18) = 0
+;------------------------------------------------------------
+trigger1 = NumTarget(11425) + NumTarget(11426) + NumTarget(11431) + NumTarget(11432) + NumTarget(11445) + NumTarget(11446) + NumTarget(11451) + NumTarget(11452)
+trigger1 = Target,Pos Y > -160 * Const(Size.YScale)
+trigger1 = Target,Vel Y > 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 10310
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = fvar(18) >= TeamSide
+;---------------------------------
+trigger1 = NumTarget(11425) + NumTarget(11426) + NumTarget(11431) + NumTarget(11432) + NumTarget(11445) + NumTarget(11446) + NumTarget(11451) + NumTarget(11452)
+trigger1 = StateNo = 25 && time > 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 10250
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 1
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = StateNo = 232 && var(19) = 59
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2400
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(0) = 0 || var(17) = 3
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = var(40) < 10
+triggerall = Power >= 960
+;---------------------------------
+trigger1 = StateNo = 1202
+trigger1 = P2StateNo = [150, 159]
+;---------------------------------
+trigger2 = NumHelper(2430)
+trigger2 = (StateNo = 1001 || StateNo = 1051 || StateNo = 1101) && time = [10, 19]
+trigger2 = P2StateType = S || P2StateType = C
+trigger2 = P2BodyDist X < 60 * Const(Size.XScale)
+trigger2 = GameTime%60 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2300
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(0) = 0 || var(17) = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = fvar(22) = 1
+triggerall = TeamMode = Single || TeamMode = Turns
+triggerall = Enemy,TeamMode = Single || Enemy,TeamMode = Turns
+triggerall = Power >= 1280
+triggerall = P2BodyDist X < 40 * Const(Size.XScale)
+;---------------------------------
+trigger1 = (StateNo = 1202 || StateNo = 1252 || StateNo = 1302) && var(19) = 59
+trigger1 = NumTarget(1200) + NumTarget(1250) + NumTarget(1300)
+trigger1 = Target,StateNo = 5000 || Target,StateNo = 5010 || Target,StateNo = 5020
+;---------------------------------
+trigger2 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger2 = var(19) = 59
+trigger2 = GameTime%2 = 0
+;---------------------------------
+trigger3 = StateNo = 25
+trigger3 = NumTarget(230)
+trigger3 = Target(230),StateNo = 5001 || Target(230),StateNo = 5011
+;---------------------------------
+trigger4 = StateNo = 402 && var(19) = 59
+trigger4 = var(23) = 1
+trigger4 = NumTarget(400)
+trigger4 = Target(400),StateNo = 5000 || Target(400),StateNo = 5010
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2200
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(0) = 0 || var(17) = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = fvar(22) = 0 || TeamMode = Simul || Enemy,TeamMode = Simul
+triggerall = Power >= 1280
+triggerall = P2BodyDist X < 50 * Const(Size.XScale)
+;---------------------------------
+trigger1 = (StateNo = 1202 || StateNo = 1252 || StateNo = 1302) && var(19) = 59
+trigger1 = NumTarget(1200) + NumTarget(1250) + NumTarget(1300)
+trigger1 = Target,StateNo = 5000 || Target,StateNo = 5010 || Target,StateNo = 5020
+;---------------------------------
+trigger2 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger2 = var(19) = 59
+trigger2 = GameTime%2 = 0
+;---------------------------------
+trigger3 = StateNo = 25
+trigger3 = NumTarget(230)
+trigger3 = Target(230),StateNo = 5001 || Target(230),StateNo = 5011
+;---------------------------------
+trigger4 = StateNo = 432 && var(19) = 59
+trigger4 = var(23) = 1
+trigger4 = NumTarget(430)
+trigger4 = Target(430),StateNo = 5000 || Target(400),StateNo = 5010
+trigger4 = GameTime%2 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2000
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(0) = 0 || var(17) = 1
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = var(40) < 10
+triggerall = power >= 1120
+;---------------------------------
+trigger1 = StateNo = 432 && var(19) = 59
+trigger1 = var(23) = 1
+trigger1 = NumTarget(430)
+trigger1 = Target(430),StateNo = 5000 || Target(430),StateNo = 5010
+;---------------------------------
+trigger2 = (StateNo = 1001 || StateNo = 1051 || StateNo = 1101) && time = [10, 19]
+trigger2 = (EnemyNear,StateNo = [5000, 5001]) || (EnemyNear,StateNo = [5010, 5011])
+trigger2 = Helper(1010),StateNo = 1013
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1750
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = Power >= 400
+triggerall = P2StateNo = 5000 || P2StateNo = 5010
+;---------------------------------
+trigger1 = StateNo = 252 && var(19) = 59
+trigger1 = GameTime%2 = 0
+;---------------------------------
+trigger2 = StateNo = 282 && var(19) = 59
+trigger2 = GameTime%2 = 0
+;---------------------------------
+trigger3 = StateNo = 422 && var(19) = 59
+trigger3 = GameTime%2 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1600 + 50 * (GameTime%3)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = !NumTarget
+trigger1 = ((Ctrl && StateType != A) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26]))
+trigger1 = P2StateType = S || P2StateType = C
+trigger1 = P2BodyDist X < 60 * Const(Size.XScale)
+trigger1 = GameTime%120 = 40
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1440
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = StateNo = 13 && time > 0 || StateNo = 14
+trigger1 = NumTarget(1750)
+trigger1 = Target(1750),Pos Y > -150 * Const(Size.YScale)
+trigger1 = Target(1750),Vel Y > 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1400 + 20 * (P2BodyDist X >= 30 * Const(Size.XScale)) + 20 * (P2BodyDist X >= 60 * Const(Size.XScale))
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = StateNo = 252 || StateNo = 282 || StateNo = 422
+trigger1 = var(19) = 59
+trigger1 = (P2StateNo = 5000 || P2StateNo = 5010)
+trigger1 = GameTime%3 = 2
+;---------------------------------
+trigger2 = NumTarget(2250) + NumTarget(2350)
+trigger2 = StateNo = 13 && time > 0 || StateNo = 14
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1350
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = Power >= 400
+;---------------------------------
+trigger1 = ((StateNo = [5121, 5122]) && var(8) = 1)
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+trigger1 = P2StateType = S || P2StateType = C
+trigger1 = P2MoveType = A
+trigger1 = GameTime%2 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1300
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+;---------------------------------
+trigger1 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger1 = var(19) = 56
+trigger1 = P2BodyDist X < 40 * Const(Size.XScale)
+trigger1 = GameTime%5 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1200
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(15) = 0
+triggerall = var(59) = 1 && var(26) = 1
+trigger1 = ((StateNo = [5121, 5122]) && var(8) = 1)
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+trigger1 = P2StateType = S || P2StateType = C
+trigger1 = P2MoveType = A
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1150
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = Power >= 400
+triggerall = var(40) = 0
+;---------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = P2BodyDist X >= 40 * Const(Size.XScale) && P2BodyDist X < 100 * Const(Size.XScale)
+trigger1 = P2StateNo = 40 && time = 0
+trigger1 = GameTime%2 = 1
+;---------------------------------
+trigger2 = StateNo = 442 && var(19) = 59
+trigger2 = GameTime%4 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1000 + 50 * (GameTime%3)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = var(40) = 0
+;---------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = P2BodyDist X >= 150 * Const(Size.XScale)
+trigger1 = GameTime%60 = (10 * Facing + 30)/2
+trigger1 = P2StateType = S || P2StateType = C
+;---------------------------------
+trigger2 = PrevStateNo = 0
+trigger2 = time = 0 && (StateNo = 40 || StateNo = 60)
+trigger2 = P2BodyDist X >= 90 * Const(Size.XScale)
+;---------------------------------
+trigger3 = StateNo = 442 && var(19) = 59
+;---------------------------------
+trigger4 = var(15) = 1
+trigger4 = StateNo = 10252 && var(19) = 59
+;---------------------------------
+trigger5 = StateNo = 252 && var(19) = 59
+;---------------------------------
+trigger6 = StateNo = 282 && var(19) = 59
+;---------------------------------
+trigger7 = StateNo = 422 && var(19) = 59
+
+;--------------------------------------------------------------------------- 
+[State -1]
+type = ChangeState
+value = 910 + 10 * (BackEdgeBodyDist < 100)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2StateType = S || P2StateType = C
+triggerall = var(1) != [0, 5]
+triggerall = P2BodyDist X <= (24 + 4 * (P2StateType = C) + 4 * (P2MoveType = A)) * Const(Size.XScale)
+;---------------------------------
+trigger1 = StateNo = 25 && PrevStateNo = 234
+;---------------------------------
+trigger2 = StateNo = 25 && PrevStateNo = 284
+;---------------------------------
+trigger3 = StateNo = 25 && PrevStateNo = 434
+;---------------------------------
+trigger4 = StateNo = 102
+trigger4 = GameTime%2 = (1 * Facing + 1)/2
+;---------------------------------
+trigger5 = StateNo = 801 && AnimElemTime(2) = 0
+trigger5 = GameTime%2 = 1
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 800
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2BodyDist X < 25 * Const(Size.XScale)
+triggerall = P2StateType = C
+;---------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%12 = 9
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 710
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = var(14) != [0, 1]
+trigger1 = StateNo = 50 || StateNo = 70
+trigger1 = P2BodyDist X >= 30 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 60 * Const(Size.XScale)
+trigger1 = Pos Y > -80 * Const(Size.YScale)
+trigger1 = Vel Y > 0 * Const(Size.YScale)
+trigger1 = P2StateType = S || P2StateType = C
+;------------------------------------
+trigger2 = Anim = 3023 && StateNo = [3000, 3089]
+trigger2 = time = 1
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 700 + 10 * (var(14) != [0, 1])
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = StateNo = 50 || StateNo = 70
+trigger1 = P2BodyDist X >= 30 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 70 * Const(Size.XScale)
+trigger1 = P2BodyDist Y < 20 * Const(Size.YScale)
+trigger1 = P2BodyDist Y > -20 * Const(Size.YScale)
+trigger1 = P2StateType = A
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 650
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = var(14) != [0, 1]
+trigger1 = StateNo = 50 || StateNo = 70
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+trigger1 = Pos Y > -70 * Const(Size.YScale)
+trigger1 = Vel Y > 0 * Const(Size.YScale)
+trigger1 = P2StateType = S || P2StateType = C
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 630
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = var(14) != [0, 1]
+trigger1 = StateNo = 50 || StateNo = 70
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+trigger1 = P2BodyDist Y < 30 * Const(Size.YScale)
+trigger1 = P2BodyDist Y > -30 * Const(Size.YScale)
+trigger1 = P2StateType = A
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 450
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = P2StateType = S || P2StateType = C
+trigger1 = P2BodyDist X >= 30 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 60 * Const(Size.XScale)
+trigger1 = (GameTime+Facing)%8 = 3
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 440
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2StateType = S || P2StateType = C
+triggerall = P2BodyDist X < 60 * Const(Size.XScale)
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+Facing)%6 = 1
+;------------------------------------
+trigger2 = (StateNo = [720, 721]) && time = 1
+trigger2 = NumTarget
+trigger2 = (Target,StateNo = [5000, 5001]) || (Target,StateNo = [5010, 5011])
+;------------------------------------
+trigger3 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger3 = var(19) = 59
+trigger3 = GameTime%4 = 3
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 430
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2StateType = S || P2StateType = C
+triggerall = P2BodyDist X < 20 * Const(Size.XScale)
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%4 = 3
+;------------------------------------
+trigger2 = var(23) = 0
+trigger2 = StateNo = 432 && var(19) = 59
+trigger2 = NumTarget(430)
+trigger2 = Target(430),StateNo = 5000 || Target(430),StateNo = 5010
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 420
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%6 = 3
+trigger1 = P2BodyDist X < 40 * Const(Size.XScale)
+trigger1 = P2BodyDist Y > -50 * Const(Size.XScale)
+trigger1 = P2StateType = A
+;------------------------------------
+trigger2 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger2 = var(19) = 59
+trigger2 = P2BodyDist X < 20 * Const(Size.XScale)
+trigger2 = P2StateType = S || P2StateType = C
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 410
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%4 = 3
+trigger1 = P2BodyDist X < 25 * Const(Size.XScale)
+trigger1 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 400
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%3 = 1
+trigger1 = P2BodyDist X < 20 * Const(Size.XScale)
+;------------------------------------
+trigger2 = StateNo = 432 && var(19) = 59
+trigger2 = (var(15) = 0 && var(17) = 2)
+trigger2 = var(23) = 0
+;------------------------------------
+trigger3 = StateNo = 3103 && AnimTime = 0
+trigger3 = P2BodyDist X < 50 * Const(Size.XScale)
+;------------------------------------
+trigger4 = ((StateNo = [5121, 5122]) && var(8) = 0)
+trigger4 = P2BodyDist X < 50 * Const(Size.XScale)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 290
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%8 = 5
+trigger1 = P2BodyDist X >= 40 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 80 * Const(Size.XScale)
+trigger1 = P2BodyDist Y > -50 * Const(Size.XScale)
+trigger1 = P2StateType = A
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 280
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2BodyDist X < 40 * Const(Size.XScale)
+;------------------------------------
+trigger1 = (StateNo = [720, 721]) && time = 1
+trigger1 = NumTarget
+trigger1 = (Target,StateNo = [5000, 5001]) || (Target,StateNo = [5010, 5011])
+;------------------------------------
+trigger2 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger2 = var(19) = 59
+trigger2 = GameTime%2 = 1
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 270
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%4 = 2
+trigger1 = P2BodyDist X >= 30 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 60 * Const(Size.XScale)
+trigger1 = P2StateType = S || P2StateType = C
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 260
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%3 = 2
+trigger1 = P2BodyDist X < 20 * Const(Size.XScale)
+trigger1 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 250
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2BodyDist X < 20 * Const(Size.XScale)
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%4 = 2
+;------------------------------------
+trigger2 = (StateNo = [720, 721]) && time = 1
+trigger2 = NumTarget
+trigger2 = (Target,StateNo = [5000, 5001]) || (Target,StateNo = [5010, 5011])
+;------------------------------------
+trigger3 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger3 = var(19) = 59
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 240
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%12 = 2
+trigger1 = P2BodyDist X >= 35 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 65 * Const(Size.XScale)
+trigger1 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 230
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2BodyDist X < 20 * Const(Size.XScale)
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%2 = 1
+;------------------------------------
+trigger2 = var(15) = 1
+trigger2 = (Anim = 3002 || Anim = 3012) && StateNo = [3000, 3089]
+trigger2 = var(19) = 59
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 220
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%8 = 0
+trigger1 = P2BodyDist X >= 20 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 50 * Const(Size.XScale)
+trigger1 = P2StateType = S
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 210
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = P2BodyDist X < 30 * Const(Size.XScale)
+;------------------------------------
+trigger1 = !(var(15) = 0 && var(17) = 2)
+trigger1 = var(23) = 0
+trigger1 = StateNo = 432 && var(19) = 59
+trigger1 = NumTarget(430)
+trigger1 = Target(430),StateNo = 5000
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 200
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = (GameTime+facing)%3 = 0
+trigger1 = P2BodyDist X < 35 * Const(Size.XScale)
+trigger1 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 105
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;--------------------------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = P2StateType = S || P2StateType = C
+trigger1 = P2BodyDist X < 30 * Const(Size.XScale)
+trigger1 = GameTime%14 = 9 + facing * 3
+;--------------------------------------------------------
+trigger2 = PrevStateNo = 0
+trigger2 = time = 0 && (StateNo = 40 || StateNo = 60)
+trigger2 = GameTime%2 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 100
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;--------------------------------------------------------
+trigger1 = !NumTarget
+trigger1 = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+trigger1 = P2StateType = S || P2StateType = C
+trigger1 = P2BodyDist X >= 30 * Const(Size.XScale)
+trigger1 = P2BodyDist X < 100 * Const(Size.XScale)
+trigger1 = GameTime%8 = 4 + facing * 2
+;--------------------------------------------------------
+trigger2 = PrevStateNo = 0
+trigger2 = time = 0 && (StateNo = 40 || StateNo = 60)
+trigger2 = GameTime%2 = 1
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 43 + 20 * (Random%2)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = !NumTarget
+triggerall = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+triggerall = P2MoveType = A
+;--------------------------------------------------------
+trigger1 = var(15) = 0
+trigger1 = (GameTime+15*facing)%90 = 60
+;--------------------------------------------------------
+trigger2 = var(15) = 1
+trigger2 = (GameTime+15*facing)%45 = 30
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 42 + 20 * (Random%2)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = !NumTarget
+triggerall = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+triggerall = P2MoveType = A
+;--------------------------------------------------------
+trigger1 = var(15) = 0
+trigger1 = (GameTime+15*facing)%90 = 30
+;--------------------------------------------------------
+trigger2 = var(15) = 1
+trigger2 = (GameTime+15*facing)%45 = 15
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 41 + 20 * (Random%2)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+triggerall = !NumTarget
+triggerall = (StateType != A && ctrl) || (StateNo = 13 && time > 0 || StateNo = 14) || (StateNo = [25, 26])
+triggerall = P2MoveType = A
+;--------------------------------------------------------
+trigger1 = var(15) = 0
+trigger1 = (GameTime+15*facing)%90 = 0
+;--------------------------------------------------------
+trigger2 = var(15) = 1
+trigger2 = (GameTime+15*facing)%45 = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 26
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;--------------------------------------------------------
+trigger1 = PrevStateNo = 0
+trigger1 = time = 0 && (StateNo = 40 || StateNo = 60)
+trigger1 = GameTime%4 = 2
+;--------------------------------------------------------
+trigger2 = StateNo = 1754 && Anim = 1754 && AnimTime = 0
+trigger2 = P2Bodydist X < 30 * Const(Size.XScale)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 25
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;--------------------------------------------------------
+trigger1 = PrevStateNo = 0
+trigger1 = time = 0 && (StateNo = 40 || StateNo = 60)
+trigger1 = GameTime%4 = 3
+;--------------------------------------------------------
+trigger2 = StateNo = 234 && Anim = 234 && AnimTime = 0
+;--------------------------------------------------------
+trigger3 = StateNo = 284 && Anim = 284 && AnimTime = 0
+;--------------------------------------------------------
+trigger4 = StateNo = 434 && Anim = 434 && AnimTime = 0
+;--------------------------------------------------------
+trigger5 = StateNo = 11406 || StateNo = 11437 || StateNo = 11457
+trigger5 = AnimTime = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 13
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;--------------------------------------------------------
+trigger1 = NumTarget(1750)
+trigger1 = StateNo = 1754 && Anim = 1754 && AnimTime = 0
+;--------------------------------------------------------
+trigger2 = NumTarget(2250)
+trigger2 = StateNo = 2258 && AnimTime = 0
+;--------------------------------------------------------
+trigger3 = NumTarget(2350)
+trigger3 = StateNo = 2358 && AnimTime = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 0
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = RoundState = 2
+triggerall = var(59) = 1 && var(26) = 1
+;--------------------------------------------------------
+trigger1 = PrevStateNo != 0
+trigger1 = time = 0 && (StateNo = 40 || StateNo = 60)
+
+;---------------------------------------------------------------------------
+;↑AI
+;↓通常（人間用）
+;-| Super Motions |--------------------------------------------------------
+;Messatsu Gou Shouryuu
+[State -1]
+type = ChangeState
+value = 12400
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = (var(17) = 3 && (command = "SA1(Light)" || command = "SA1(Medium)" || command = "SA1(Heavy)")) || (var(0) = 0 && (command = "SA2(Light)" || command = "SA2(Medium)" || command = "SA2(Heavy)"))
+triggerall = power >= 880
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+trigger30 = StateNo = 1001 && time = [10, 19]
+trigger31 = StateNo = 1051 && time = [10, 19]
+trigger32 = StateNo = 1101 && time = [10, 19]
+trigger33 = StateNo = 1151 && time = [9, 18]
+trigger34 = StateNo = [11202, 11203]
+trigger35 = StateNo = [11252, 11253]
+trigger36 = StateNo = [11302, 11303]
+trigger37 = StateNo = [11312, 11313]
+trigger38 = StateNo = [11422, 11423]
+trigger39 = StateNo = [11442, 11443]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 12200
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = (var(17) = 2 && (command = "SA1(Light)" || command = "SA1(Medium)" || command = "SA1(Heavy)")) || (var(0) = 0 && (command = "SA3(Light)" || command = "SA3(Medium)" || command = "SA3(Heavy)"))
+triggerall = power >= 1280
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+trigger30 = StateNo = 1001 && time = [10, 19]
+trigger31 = StateNo = 1051 && time = [10, 19]
+trigger32 = StateNo = 1101 && time = [10, 19]
+trigger33 = StateNo = 1151 && time = [9, 18]
+trigger34 = StateNo = [11202, 11203]
+trigger35 = StateNo = [11252, 11253]
+trigger36 = StateNo = [11302, 11303]
+trigger37 = StateNo = [11312, 11313]
+trigger38 = StateNo = [11422, 11423]
+trigger39 = StateNo = [11442, 11443]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 12200
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = var(17) = 2 || var(0) = 0
+triggerall = command = "ShunGokuSatsu"
+triggerall = power >= 1280
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = StateNo = [200, 599]
+trigger11 = StateNo = [800, 899]
+trigger12 = StateNo = [10200, 10599]
+trigger13 = StateNo = 1001 && time = [10, 19]
+trigger14 = StateNo = 1051 && time = [10, 19]
+trigger15 = StateNo = 1101 && time = [10, 19]
+trigger16 = StateNo = 1151 && time = [9, 18]
+trigger17 = StateNo = [11202, 11203]
+trigger18 = StateNo = [11252, 11253]
+trigger19 = StateNo = [11302, 11303]
+trigger20 = StateNo = [11312, 11313]
+trigger21 = StateNo = [11422, 11423]
+trigger22 = StateNo = [11442, 11443]
+
+;---------------------------------------------------------------------------
+;Messatsu Gou Hadou
+[State -1]
+type = ChangeState
+value = 12000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = ((var(17) = 1 || var(0) = 0) && (command = "SA1(Light)" || command = "SA1(Medium)" || command = "SA1(Heavy)"))
+triggerall = power >= 1120
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+trigger30 = StateNo = 1001 && time = [10, 19]
+trigger31 = StateNo = 1051 && time = [10, 19]
+trigger32 = StateNo = 1101 && time = [10, 19]
+trigger33 = StateNo = 1151 && time = [9, 18]
+trigger34 = StateNo = [11202, 11203]
+trigger35 = StateNo = [11252, 11253]
+trigger36 = StateNo = [11302, 11303]
+trigger37 = StateNo = [11312, 11313]
+trigger38 = StateNo = [11422, 11423]
+trigger39 = StateNo = [11442, 11443]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2402
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (var(17) = 3 && command = "SA1(Heavy)") || (var(0) = 0 && command = "SA3(Heavy)")
+triggerall = var(40) < 10
+triggerall = power >= 960
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 1001 && time = [10, 19]
+trigger29 = StateNo = 1051 && time = [10, 19]
+trigger30 = StateNo = 1101 && time = [10, 19]
+trigger31 = StateNo = 1151 && time = [9, 18]
+trigger32 = StateNo = [1202, 1203]
+trigger33 = StateNo = [1252, 1253]
+trigger34 = StateNo = [1302, 1303]
+trigger35 = StateNo = [1352, 1353]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2401
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (var(17) = 3 && command = "SA1(Medium)") || (var(0) = 0 && command = "SA3(Medium)")
+triggerall = var(40) < 10
+triggerall = power >= 960
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 1001 && time = [10, 19]
+trigger29 = StateNo = 1051 && time = [10, 19]
+trigger30 = StateNo = 1101 && time = [10, 19]
+trigger31 = StateNo = 1151 && time = [9, 18]
+trigger32 = StateNo = [1202, 1203]
+trigger33 = StateNo = [1252, 1253]
+trigger34 = StateNo = [1302, 1303]
+trigger35 = StateNo = [1352, 1353]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2400
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (var(17) = 3 && command = "SA1(Light)") || (var(0) = 0 && command = "SA3(Light)")
+triggerall = var(40) < 10
+triggerall = power >= 960
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 1001 && time = [10, 19]
+trigger29 = StateNo = 1051 && time = [10, 19]
+trigger30 = StateNo = 1101 && time = [10, 19]
+trigger31 = StateNo = 1151 && time = [9, 18]
+trigger32 = StateNo = [1202, 1203]
+trigger33 = StateNo = [1252, 1253]
+trigger34 = StateNo = [1302, 1303]
+trigger35 = StateNo = [1352, 1353]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2300
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (var(17) = 2 && (command = "SA1(Light)" || command = "SA1(Medium)" || command = "SA1(Heavy)")) || (var(0) = 0 && (command = "SA2(Light)" || command = "SA2(Medium)" || command = "SA2(Heavy)"))
+triggerall = fvar(22) = 1
+triggerall = TeamMode = Single || TeamMode = Turns
+triggerall = Enemy,TeamMode = Single || Enemy,TeamMode = Turns
+triggerall = power >= 1280
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 1001 && time = [10, 19]
+trigger29 = StateNo = 1051 && time = [10, 19]
+trigger30 = StateNo = 1101 && time = [10, 19]
+trigger31 = StateNo = 1151 && time = [9, 18]
+trigger32 = StateNo = [1202, 1203]
+trigger33 = StateNo = [1252, 1253]
+trigger34 = StateNo = [1302, 1303]
+trigger35 = StateNo = [1352, 1353]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2200
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (var(17) = 2 && (command = "SA1(Light)" || command = "SA1(Medium)" || command = "SA1(Heavy)")) || (var(0) = 0 && (command = "SA2(Light)" || command = "SA2(Medium)" || command = "SA2(Heavy)"))
+triggerall = power >= 1280
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 1001 && time = [10, 19]
+trigger29 = StateNo = 1051 && time = [10, 19]
+trigger30 = StateNo = 1101 && time = [10, 19]
+trigger31 = StateNo = 1151 && time = [9, 18]
+trigger32 = StateNo = [1202, 1203]
+trigger33 = StateNo = [1252, 1253]
+trigger34 = StateNo = [1302, 1303]
+trigger35 = StateNo = [1352, 1353]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 2000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = ((var(17) = 1 || var(0) = 0) && (command = "SA1(Light)" || command = "SA1(Medium)" || command = "SA1(Heavy)"))
+triggerall = var(40) < 10
+triggerall = power >= 1120
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 1001 && time = [10, 19]
+trigger29 = StateNo = 1051 && time = [10, 19]
+trigger30 = StateNo = 1101 && time = [10, 19]
+trigger31 = StateNo = 1151 && time = [9, 18]
+trigger32 = StateNo = [1202, 1203]
+trigger33 = StateNo = [1252, 1253]
+trigger34 = StateNo = [1302, 1303]
+trigger35 = StateNo = [1352, 1353]
+
+;-| Special Motions |------------------------------------------------------
+;AshuraSenkuu
+[State -1]
+type = ChangeState
+value = 11950
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = command = "Ashura3(Light)" && command = "Ashura3(Medium)" && command = "Ashura3(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+;AshuraSenkuu
+[State -1]
+type = ChangeState
+value = 11900
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = command = "Ashura1(Light)" && command = "Ashura1(Medium)" && command = "Ashura1(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+;AshuraSenkuu
+[State -1]
+type = ChangeState
+value = 11850
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = command = "Ashura2(Light)" && command = "Ashura2(Medium)" && command = "Ashura2(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+;AshuraSenkuu
+[State -1]
+type = ChangeState
+value = 11800
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 1
+triggerall = command = "Shouryuuken(Light)" && command = "Shouryuuken(Medium)" && command = "Shouryuuken(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, JoudanSokutou(EX)]
+type = ChangeState
+value = 1750
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (command = "JoudanSokutou(Light)" && command = "JoudanSokutou(Medium)") || (command = "JoudanSokutou(Medium)" && command = "JoudanSokutou(Heavy)") || (command = "JoudanSokutou(Heavy)" && command = "JoudanSokutou(Light)")
+triggerall = power >= 400
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1700
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = command = "JoudanSokutou(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1650
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = command = "JoudanSokutou(Medium)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1600
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = command = "JoudanSokutou(Light)" 
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1560
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = Pos Y < 0
+triggerall = (command = "Tatsumaki(Light)" && command = "Tatsumaki(Medium)") || (command = "Tatsumaki(Medium)" && command = "Tatsumaki(Heavy)") || (command = "Tatsumaki(Heavy)" && command = "Tatsumaki(Light)")
+triggerall = power >= 400
+trigger1 = StateType = A && ctrl
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1540 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = Pos Y < 0
+triggerall = command = "Tatsumaki(Heavy)"
+trigger1 = StateType = A && ctrl
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1520 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = Pos Y < 0
+triggerall = command = "Tatsumaki(Medium)"
+trigger1 = StateType = A && ctrl
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1500 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = Pos Y < 0
+triggerall = command = "Tatsumaki(Light)"
+trigger1 = StateType = A && ctrl
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1460
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = (command = "Tatsumaki(Light)" && command = "Tatsumaki(Medium)") || (command = "Tatsumaki(Medium)" && command = "Tatsumaki(Heavy)") || (command = "Tatsumaki(Heavy)" && command = "Tatsumaki(Light)")
+triggerall = power >= 400
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1440 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Tatsumaki(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1420 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Tatsumaki(Medium)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1400 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Tatsumaki(Light)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1350
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = var(15) = 0
+triggerall = (command = "Shouryuuken(Light)" && command = "Shouryuuken(Medium)") || (command = "Shouryuuken(Medium)" && command = "Shouryuuken(Heavy)") || (command = "Shouryuuken(Heavy)" && command = "Shouryuuken(Light)")
+triggerall = power >= 400
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, Shouryuuken(Heavy)]
+type = ChangeState
+value = 1300 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Shouryuuken(Heavy)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, Shouryuuken(Medium)]
+type = ChangeState
+value = 1250 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Shouryuuken(Medium)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, Shouryuuken(Light)]
+type = ChangeState
+value = 1200 + var(15) * 10000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Shouryuuken(Light)"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1150
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = (command = "Hadouken(Light)" && command = "Hadouken(Medium)") || (command = "Hadouken(Medium)" && command = "Hadouken(Heavy)") || (command = "Hadouken(Heavy)" && command = "Hadouken(Light)")
+triggerall = command != "holddown"
+triggerall = var(40) = 0
+triggerall = power >= 400
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1100
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Hadouken(Heavy)"
+triggerall = command != "holddown"
+triggerall = var(40) = 0
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1050
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Hadouken(Medium)"
+triggerall = command != "holddown"
+triggerall = var(40) = 0
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 1000
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "Hadouken(Light)"
+triggerall = command != "holddown"
+triggerall = var(40) = 0
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, Throw Back]
+type = ChangeState
+value = 920
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "throw"
+triggerall = command = "holdback"
+triggerall = command != "holdup"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time <= 4)
+trigger5 = (StateNo = 211 && time <= 4)
+trigger6 = (StateNo = 221 && time <= 4)
+trigger7 = (StateNo = 231 && time <= 4)
+trigger8 = (StateNo = 241 && time <= 4)
+trigger9 = (StateNo = 251 && time <= 4)
+trigger10 = (StateNo = 261 && time <= 4)
+trigger11 = (StateNo = 271 && time <= 4)
+trigger12 = (StateNo = 281 && time <= 4)
+trigger13 = (StateNo = 291 && time <= 4)
+trigger14 = (StateNo = 401 && time <= 4)
+trigger15 = (StateNo = 411 && time <= 4)
+trigger16 = (StateNo = 421 && time <= 4)
+trigger17 = (StateNo = 431 && time <= 4)
+trigger18 = (StateNo = 441 && time <= 4)
+trigger19 = (StateNo = 451 && time <= 4)
+trigger20 = (StateNo = 801 && time <= 4)
+trigger21 = (StateNo = 811 && time <= 4)
+trigger22 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+;Throw (Seoi Nage)
+[State -1]
+type = ChangeState
+value = 910
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "throw"
+triggerall = command != "holdup"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time <= 4)
+trigger5 = (StateNo = 211 && time <= 4)
+trigger6 = (StateNo = 221 && time <= 4)
+trigger7 = (StateNo = 231 && time <= 4)
+trigger8 = (StateNo = 241 && time <= 4)
+trigger9 = (StateNo = 251 && time <= 4)
+trigger10 = (StateNo = 261 && time <= 4)
+trigger11 = (StateNo = 271 && time <= 4)
+trigger12 = (StateNo = 281 && time <= 4)
+trigger13 = (StateNo = 291 && time <= 4)
+trigger14 = (StateNo = 401 && time <= 4)
+trigger15 = (StateNo = 411 && time <= 4)
+trigger16 = (StateNo = 421 && time <= 4)
+trigger17 = (StateNo = 431 && time <= 4)
+trigger18 = (StateNo = 441 && time <= 4)
+trigger19 = (StateNo = 451 && time <= 4)
+trigger20 = (StateNo = 801 && time <= 4)
+trigger21 = (StateNo = 811 && time <= 4)
+trigger22 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, Leap Attack]
+type = ChangeState
+value = 950
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "leap attack"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+triggerall = command != "holdup"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time <= 4)
+trigger5 = (StateNo = 211 && time <= 4)
+trigger6 = (StateNo = 221 && time <= 4)
+trigger7 = (StateNo = 231 && time <= 4)
+trigger8 = (StateNo = 241 && time <= 4)
+trigger9 = (StateNo = 251 && time <= 4)
+trigger10 = (StateNo = 261 && time <= 4)
+trigger11 = (StateNo = 271 && time <= 4)
+trigger12 = (StateNo = 281 && time <= 4)
+trigger13 = (StateNo = 291 && time <= 4)
+trigger14 = (StateNo = 401 && time <= 4)
+trigger15 = (StateNo = 411 && time <= 4)
+trigger16 = (StateNo = 421 && time <= 4)
+trigger17 = (StateNo = 431 && time <= 4)
+trigger18 = (StateNo = 441 && time <= 4)
+trigger19 = (StateNo = 451 && time <= 4)
+trigger20 = (StateNo = 801 && time <= 4)
+trigger21 = (StateNo = 811 && time <= 4)
+trigger22 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+[State -1, Personal Action]
+type = ChangeState
+value = 980
+triggerall = var(8) <= var(48)
+triggerall = fvar(11) < 48 + 8 * (var(16)%4)
+triggerall = command = "personal action"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+triggerall = command != "holdup"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = StateNo = 40 || StateNo = 60
+trigger3 = StateNo = 151 || StateNo = 161
+trigger4 = StateNo = 153 || StateNo = 163
+trigger5 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger6 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger7 = (StateNo = 5001 || StateNo = 5011)
+trigger8 = ((StateNo = 5030 && Anim = 5040) || StateNo = 5040) && Vel Y > 0 && Pos Y >= -20
+trigger9 = StateNo = [5121, 5122]
+trigger10 = (StateNo = 201 && time <= 4) || StateNo = 202 || StateNo = 203 || (StateNo = 204 && time <= 2)
+trigger11 = (StateNo = 211 && time <= 4) || StateNo = 212 || StateNo = 213 || (StateNo = 214 && time <= 2)
+trigger12 = (StateNo = 221 && time <= 4) || StateNo = 222 || StateNo = 223 || (StateNo = 224 && time <= 4)
+trigger13 = (StateNo = 231 && time <= 4) || StateNo = 232 || StateNo = 233 || (StateNo = 234 && time <= 4)
+trigger14 = (StateNo = 241 && time <= 4)
+trigger15 = (StateNo = 251 && time <= 4) || StateNo = 252 || StateNo = 253
+trigger16 = (StateNo = 261 && time <= 4)
+trigger17 = (StateNo = 271 && time <= 4)
+trigger18 = (StateNo = 281 && time <= 4) || StateNo = 282 || StateNo = 283 || (StateNo = 284 && time <= 4)
+trigger19 = (StateNo = 291 && time <= 4)
+trigger20 = (StateNo = 401 && time <= 4) || StateNo = 402 || StateNo = 403 || (StateNo = 404 && time <= 2)
+trigger21 = (StateNo = 411 && time <= 4) || StateNo = 412 || StateNo = 413 || (StateNo = 414 && time <= 4)
+trigger22 = (StateNo = 421 && time <= 4) || StateNo = 422 || StateNo = 423
+trigger23 = (StateNo = 431 && time <= 4) || StateNo = 432 || StateNo = 433 || (StateNo = 434 && time <= 2)
+trigger24 = (StateNo = 441 && time <= 4) || StateNo = 442 || StateNo = 443 || (StateNo = 444 && time <= 4)
+trigger25 = (StateNo = 451 && time <= 4)
+trigger26 = (StateNo = 801 && time <= 4)
+trigger27 = (StateNo = 811 && time <= 4)
+trigger28 = StateNo = 10252 || StateNo = 10253
+trigger29 = (StateNo = 10311 && time <= 4)
+
+;---------------------------------------------------------------------------
+;Target Combo
+[State -1]
+type = ChangeState
+value = 10250
+triggerall = var(15) = 1
+triggerall = command = "z"
+trigger1 = StateNo = [232, 234]
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 810
+triggerall = command = "holdfwd"
+triggerall = command = "z"
+triggerall = command != "holdup" && command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 800
+triggerall = command = "holdfwd"
+triggerall = command = "y"
+triggerall = command != "holdup" && command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Target Combo
+[State -1]
+type = ChangeState
+value = 300
+triggerall = var(15) = 0
+triggerall = command = "c"
+trigger1 = StateNo = [242, 244]
+
+;---------------------------------------------------------------------------
+;Back Step
+[State -1]
+type = ChangeState
+value = 105
+triggerall = command = "BB"
+trigger1 = StateType != A && ctrl
+
+;---------------------------------------------------------------------------
+;Front Step
+[State -1]
+type = ChangeState
+value = 100
+triggerall = command = "FF"
+trigger1 = StateType != A && ctrl
+
+;---------------------------------------------------------------------------
+[State -1, Super Jump]
+type = ChangeState
+value = 60
+triggerall = command = "High Jump"
+trigger1 = StateType != A && ctrl
+
+;---------------------------------------------------------------------------
+;Close Stand Heavy Punch
+[State -1]
+type = ChangeState
+value = 240 + 10 * (P2BodyDist X < 20)
+triggerall = command = "z"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1]
+type = ChangeState
+value = 220 + 10 * (P2BodyDist X < 20)
+triggerall = command = "y"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1, Close Stand Light Punch (Hiji Uchi)]
+type = ChangeState
+value = 210
+triggerall = command != "holddown"
+triggerall = P2BodyDist X < 30
+triggerall = command = "x"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = StateNo = 214 && time >= 1
+trigger5 = (StateNo = 401 && time >= 6) || (StateNo = [402, 404])
+trigger6 = (StateNo = 431 && time >= 7) || (StateNo = [432, 434])
+
+;---------------------------------------------------------------------------
+;Far Stand Light Punch (Jab)
+[State -1]
+type = ChangeState
+value = 200
+triggerall = command = "x"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time >= 6) || (StateNo = [202, 204])
+trigger5 = StateNo = 214 && time >= 1
+trigger6 = (StateNo = 401 && time >= 6) || (StateNo = [402, 404])
+trigger7 = (StateNo = 431 && time >= 7) || (StateNo = [432, 434])
+
+;---------------------------------------------------------------------------
+;Far Stand Heavy Kick (Shizan)
+[State -1]
+type = ChangeState
+value = 10310
+triggerall = var(15) = 1 && P2BodyDist X < 40
+triggerall = command = "c"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Stand Heavy Kick (Mawashi Geri)
+[State -1]
+type = ChangeState
+value = 290
+triggerall = command = "c"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Close Stand Medium Kick (Hiza Geri)
+[State -1]
+type = ChangeState
+value = 280
+triggerall = command = "b"
+triggerall = command != "holddown"
+triggerall = p2bodydist X < 40
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Far Stand Medium Kick (Yoko Geri)
+[State -1]
+type = ChangeState
+value = 270
+triggerall = command = "b"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Stand Light Kick (Low Kick)
+[State -1]
+type = ChangeState
+value = 10260
+triggerall = var(15) = 1 && p2bodydist X > 40
+triggerall = command = "a"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time >= 6) || (StateNo = [202, 204])
+trigger5 = StateNo = 214 && time >= 1
+trigger6 = (StateNo = 401 && time >= 6) || (StateNo = [402, 404])
+trigger7 = (StateNo = 431 && time >= 7) || (StateNo = [432, 434])
+
+;---------------------------------------------------------------------------
+;Stand Light Kick (Low Kick)
+[State -1]
+type = ChangeState
+value = 260
+triggerall = var(59) = 0
+triggerall = command = "a"
+triggerall = command != "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time >= 6) || (StateNo = [202, 204])
+trigger5 = StateNo = 214 && time >= 1
+trigger6 = (StateNo = 401 && time >= 6) || (StateNo = [402, 404])
+trigger7 = (StateNo = 431 && time >= 7) || (StateNo = [432, 434])
+
+;---------------------------------------------------------------------------
+;Crouch Heavy Punch (Tsukiage Upper)
+[State -1]
+type = ChangeState
+value = 420
+triggerall = command = "z"
+triggerall = command = "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Crouch Medium Punch (Jab)
+[State -1]
+type = ChangeState
+value = 410
+triggerall = command = "y"
+triggerall = command = "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+[State -1, Crouch Light Punch (Jab)]
+type = ChangeState
+value = 400
+triggerall = command = "x"
+triggerall = command = "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time >= 6) || (StateNo = [202, 204])
+trigger5 = StateNo = 214 && time >= 1
+trigger6 = (StateNo = 401 && time >= 6) || (StateNo = [402, 404])
+trigger7 = (StateNo = 431 && time >= 7) || (StateNo = [432, 434])
+
+;---------------------------------------------------------------------------
+;Crouch Heavy Kick (Ashi Barai)
+[State -1]
+type = ChangeState
+value = 450
+triggerall = command = "c"
+triggerall = command = "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Crouch Medium Kick (Kurubushi Kick)
+[State -1]
+type = ChangeState
+value = 440
+triggerall = command = "b"
+triggerall = command = "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+
+;---------------------------------------------------------------------------
+;Crouch Light Kick (Kick)
+[State -1]
+type = ChangeState
+value = 430
+triggerall = command = "a"
+triggerall = command = "holddown"
+trigger1 = StateType != A && ctrl
+trigger2 = (StateNo = 3002 || StateNo = 3007 || StateNo = 3012 || StateNo = 3017) && var(59) = 0
+trigger3 = (StateNo = 3032 || StateNo = 3042 || StateNo = 3062 || StateNo = 3072) && var(59) = 0
+trigger4 = (StateNo = 201 && time >= 6) || (StateNo = [202, 204])
+trigger5 = StateNo = 214 && time >= 1
+trigger6 = (StateNo = 401 && time >= 6) || (StateNo = [402, 404])
+trigger7 = (StateNo = 431 && time >= 7) || (StateNo = [432, 434])
+
+;---------------------------------------------------------------------------
+;Jump Heavy Punch
+[State -1]
+type = ChangeState
+value = 650
+triggerall = var(59) = 0
+triggerall = command = "z"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) != [0, 1]
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger3 = (StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Vertical Jump Heavy Punch
+[State -1]
+type = ChangeState
+value = 640
+triggerall = var(59) = 0
+triggerall = command = "z"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) = [0, 1]
+trigger1 = !(StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger1 = !(StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Jump Medium Punch
+[State -1]
+type = ChangeState
+value = 630
+triggerall = var(59) = 0
+triggerall = command = "y"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) != [0, 1]
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger3 = (StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Vertical Jump Medium Punch
+[State -1]
+type = ChangeState
+value = 620
+triggerall = var(59) = 0
+triggerall = command = "y"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) = [0, 1]
+trigger1 = !(StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger1 = !(StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Jump Light Punch
+[State -1]
+type = ChangeState
+value = 600
+triggerall = var(59) = 0
+triggerall = command = "x"
+trigger1 = StateType = A && ctrl
+
+;---------------------------------------------------------------------------
+;Jump Heavy Kick
+[State -1]
+type = ChangeState
+value = 710
+triggerall = var(59) = 0
+triggerall = command = "c"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) != [0, 1]
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger3 = (StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Vertical Jump Heavy Kick
+[State -1]
+type = ChangeState
+value = 700
+triggerall = var(59) = 0
+triggerall = command = "c"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) = [0, 1]
+trigger1 = !(StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger1 = !(StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Jump Medium Kick
+[State -1]
+type = ChangeState
+value = 690
+triggerall = var(59) = 0
+triggerall = command = "b"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) != [0, 1]
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger3 = (StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Vertical Jump Medium Kick
+[State -1]
+type = ChangeState
+value = 680
+triggerall = var(59) = 0
+triggerall = command = "b"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) = [0, 1]
+trigger1 = !(StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger1 = !(StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Jump Light Kick
+[State -1]
+type = ChangeState
+value = 670
+triggerall = var(59) = 0
+triggerall = command = "a"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) != [0, 1]
+trigger2 = (StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger3 = (StateNo = 3023 || StateNo = 3053 || StateNo = 3083)
+
+;---------------------------------------------------------------------------
+;Vertical Jump Light Kick
+[State -1]
+type = ChangeState
+value = 660
+triggerall = var(59) = 0
+triggerall = command = "a"
+triggerall = StateType = A && ctrl
+trigger1 = var(14) = [0, 1]
+trigger1 = !(StateNo = 3022 || StateNo = 3052 || StateNo = 3082)
+trigger1 = !(StateNo = 3023 || StateNo = 3053 || StateNo = 3083)

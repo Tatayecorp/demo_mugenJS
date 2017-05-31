@@ -1,0 +1,26 @@
+;Player information
+[Info]
+name = "Ryu"
+displayname = "Ryu"
+versiondate = 04,14,2001
+mugenversion = 04,14,2001
+author = "Umihei"
+pal.defaults = 1, 2, 3, 4, 5, 6
+
+;Files for the player
+[Files]
+StCommon = RyuSystemCns.txt
+Cmd = CODE/RyuCmd.txt
+Anim = CODE/Ryu.air
+Cns = CODE/RyuCns.txt
+St = CODE/RyuCns.txt
+st1 = CODE/Ryu(EX)Cns.txt
+
+sprite = Ryu.sff
+
+pal1 = Act/3rdRyu04.act
+pal2 = Act/3rdRyu05.act
+pal3 = Act/3rdRyu06.act
+pal4 = Act/3rdRyu01.act
+pal5 = Act/3rdRyu02.act
+pal6 = Act/3rdRyu03.act

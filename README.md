@@ -1,2 +1,2 @@
 # demo_mugenJS
-Test of using characters that have been made for the mugen engine in JavaScript
+Test of using mugen's characters in JavaScript (DEF, AIR, SFF and ACT files)

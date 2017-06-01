@@ -1,9 +1,11 @@
 # demo_mugenJS
 
+
 About M.U.G.E.N.
 -----
 
 M.U.G.E.N is a 2D fighting game engine with many customizable components.
+
 
 About this demo
 -----
@@ -20,6 +22,7 @@ The definitions file (.def) is the most commonly used file in the M.U.G.E.N engi
 
 This file tells the engine what files the content uses and where they are located, what characters to be included on the select screen and their locations, what stages to be included, what stages the characters are to be fought on in Arcade mode, what order they appear in and how many can be fought per order, etc. 
 
+
 AIR files
 -----
 
@@ -30,6 +33,7 @@ SFF files
 -----
 
 The sprites file (.sff) contains every image (sprite) used by a stage, character, screenpack, etc. Because M.U.G.E.N runs off indexed images with 256 colour palettes, transparency has to be a single forced colour rather than actual transparency. If a sprite isn't indexed, it runs off the palette of the computer's operating system, with the default transparency colour being black. 
+
 
 ACT files
 -----

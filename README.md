@@ -8,7 +8,10 @@ M.U.G.E.N is a 2D fighting game engine with many customizable components.
 About this demo
 -----
 
-This demo use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files)
+This demo use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files) to display and animate into canvas.
+
+![demo_mugenJS capture](https://julien.vancutsem.me/images/captures/demo_mugenJS.png)
+
 
 DEF files
 -----

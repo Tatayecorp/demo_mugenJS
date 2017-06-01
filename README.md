@@ -33,6 +33,10 @@ ACT files
 
 Palette files (.act) are the 256 colour data files that determine what colours go where on a character. A single M.U.G.E.N character can have up to 12 act files that can be read by the M.U.G.E.N engine - these are determined by the .def file. 
 
+
+How to modify the demo
+-----
+
 ### To test with another character : ###
 
 - put character files in chars directories (ex. chars/sf3_gouki)

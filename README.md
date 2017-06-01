@@ -46,7 +46,7 @@ How to modify the demo
 
 ### To test with another character : ###
 
-- put character files in chars directories (ex. chars/sf3_gouki)
+- put character files in chars directory (ex. chars/sf3_gouki)
 - in js/app.js add the ressource 
 ```js
 var ressources = [ new ressource( 'chars', 'SF3_Ryu' ), new ressource( 'chars', 'sf3_gouki' ) ];

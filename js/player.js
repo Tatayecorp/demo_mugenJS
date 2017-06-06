@@ -1,5 +1,5 @@
 
-function player ( res ) {
+function player ( resource ) {
 			
 	this.pos = { x : 0, y : 0 };
 	this.action = 0;
@@ -9,10 +9,10 @@ function player ( res ) {
 	this.palette = null;
 	
 	var hasOwn = Object.prototype.hasOwnProperty;
-	if ( typeof res != 'object' ) {
+	if ( typeof resource != 'object' ) {
 		throw TypeError( 'player - ressource incorrect' );
 	}
-	var properties = Object( res );
+	var properties = Object( resource );
 	for ( var prop in properties ) {
 		if ( hasOwn.call( properties, prop ) ) {
 			this[ prop ] = properties[ prop ];

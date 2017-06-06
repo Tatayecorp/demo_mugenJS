@@ -18,9 +18,9 @@ st1 = CODE/Ryu(EX)Cns.txt
 
 sprite = Ryu.sff
 
-pal1 = Act/3rdRyu04.act
-pal2 = Act/3rdRyu05.act
-pal3 = Act/3rdRyu06.act
-pal4 = Act/3rdRyu01.act
-pal5 = Act/3rdRyu02.act
-pal6 = Act/3rdRyu03.act
+pal1 = ACT/3rdRyu04.act
+pal2 = ACT/3rdRyu05.act
+pal3 = ACT/3rdRyu06.act
+pal4 = ACT/3rdRyu01.act
+pal5 = ACT/3rdRyu02.act
+pal6 = ACT/3rdRyu03.act

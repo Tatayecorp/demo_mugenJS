@@ -38,12 +38,10 @@ function main() {
 var player1;
 var player2;
 
-var ressources = [ 	new ressource( 'chars', 'SF3_Ryu' )
-				 ];
-
-//sprite.load().then( function() { init(); } );
-
-Promise.all( [ ressources[ 0 ].load() ] ).then( function() { init(); } );
+var resources = [];
+resources.push( new resource( 'chars', 'SF3_Ryu' ) );
+//resources.push( new resource( 'chars', 'sf3_gouki' ) ); // Another character
+Promise.all( resources.map( function( resource ) { return resource.load(); } ) ).then( function() { init(); } );
 
 function init() {
     reset();
@@ -143,12 +141,13 @@ function reset() {
 	
 	ctx.scale( zoom || 1, zoom || 1 );
 	
-	player1 = new player( ressources[ 0 ] );
+	player1 = new player( resources[ 0 ] );
 	player1.pos = { x : canvasWidth / 2 - 70, y : canvasHeight - 70 };
 	player1.palette = player1.SFF.palette;
 	player1.right = 1;
 	
-	player2 = new player( ressources[ 0 ] );
+	player2 = new player( resources[ 0 ] );
+	//player2 = new player( resources[ 1 ] ); // Another character
 	player2.pos = { x : canvasWidth / 2 + 70, y : canvasHeight - 70 };
 	player2.palette = player2.ACT[ 0 ];
 	player2.right = -1;

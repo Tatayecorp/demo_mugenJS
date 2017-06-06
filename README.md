@@ -47,13 +47,13 @@ How to modify the demo
 ### To test with another character : ###
 
 - put character files in chars directory (ex. chars/sf3_gouki)
-- in js/app.js add the ressource 
+- in js/app.js add the resource 
 ```js
-var ressources = [ new ressource( 'chars', 'SF3_Ryu' ), new ressource( 'chars', 'sf3_gouki' ) ];
+resources.push( new resource( 'chars', 'sf3_gouki' ) ); // Another character
 ```
-- in js/app.js change ressource of player2
+- in js/app.js change resource of player2
 ```js
-player2 = new player( ressources[ 1 ] );
+player2 = new player( resources[ 1 ] ); // Another character
 ```
 
 ### To change animation ###

@@ -15,7 +15,7 @@ function player (resource) {
     var properties = Object(resource);
     for (var prop in properties) {
         if (hasOwn.call(properties, prop)) {
-            this[ prop ] = properties[ prop ];
+            this[prop] = properties[prop];
         }
     }
 
@@ -27,7 +27,7 @@ player.prototype = {
             throw new TypeError('indexOf - SFF not defined.');
         }
         for (var i = 0; i < this.SFF.images.length; i++) {
-            if (this.SFF.images[ i ].groupNumber === groupNumber && this.SFF.images[ i ].imageNumber === imageNumber) {
+            if (this.SFF.images[i].groupNumber === groupNumber && this.SFF.images[i].imageNumber === imageNumber) {
                 return i;
             }
         }

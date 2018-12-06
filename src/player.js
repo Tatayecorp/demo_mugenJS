@@ -27,7 +27,10 @@ player.prototype = {
             throw new TypeError('indexOf - SFF not defined.');
         }
         for (var i = 0; i < this.SFF.images.length; i++) {
-            if (this.SFF.images[i].groupNumber === groupNumber && this.SFF.images[i].imageNumber === imageNumber) {
+            if (
+                (this.SFF.images[i].groupNumber === groupNumber)
+                && (this.SFF.images[i].imageNumber === imageNumber)
+            ) {
                 return i;
             }
         }

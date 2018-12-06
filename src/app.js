@@ -82,22 +82,35 @@ function renderPlayer(player) {
     ctx.save();
     ctx.scale(player.right, 1);
 
-    var groupNumber = player.AIR[player.action].elements[player.currentFrame].groupNumber;
-    var imageNumber = player.AIR[player.action].elements[player.currentFrame].imageNumber;
+    var groupNumber = (
+        player.AIR[player.action].elements[player.currentFrame].groupNumber
+    );
+    var imageNumber = (
+        player.AIR[player.action].elements[player.currentFrame].imageNumber
+    );
     var i = player.indexOf(groupNumber, imageNumber);
 
     var image = decodePCX(player.SFF.images[i].image, player.palette);
     var width = player.right === 1 ? 0 : image.width;
 
     // Fill image
-    ctx.drawImage(image, (player.right * (player.pos.x - player.SFF.images[i].x)) + (player.right * width), player.pos.y - player.SFF.images[i].y);
+    ctx.drawImage(
+        image,
+        (
+            (player.right * (player.pos.x - player.SFF.images[i].x))
+            + (player.right * width)
+        ),
+        player.pos.y - player.SFF.images[i].y
+    );
 
     /*
     // Fill collision box // TODO Wrong in scale
     if (player.AIR[player.action].clsn2Default) {
         var clsn = player.AIR[action].clsn2Default;
     } else if (player.AIR[player.action].elements[player.currentFrame].clsn2) {
-        var clsn = player.AIR[player.action].elements[player.currentFrame].clsn2;
+        var clsn = (
+            player.AIR[player.action].elements[player.currentFrame].clsn2
+        );
     }
     if (clsn) {
         for (i = 0; i < clsn.length; i++) {
@@ -118,7 +131,10 @@ function renderPlayer(player) {
     */
 
     player.currentTime++;
-    if (player.currentTime >= player.AIR[player.action].elements[player.currentFrame].time) {
+    if (
+        player.currentTime
+        >= player.AIR[player.action].elements[player.currentFrame].time
+    ) {
         player.currentTime = 0;
         player.currentFrame++;
         if (player.currentFrame >= player.AIR[player.action].elements.length) {

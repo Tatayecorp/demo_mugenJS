@@ -203,7 +203,9 @@ function decodeSFF(data) {
             }
         }
         if (i == 0) {
-            o.palette = decodePalette(dv.extractBuffer(nextSubFile - 767, nextSubFile));
+            o.palette = decodePalette(
+                dv.extractBuffer(nextSubFile - 767, nextSubFile)
+            );
         }
         offset = nextSubFile;
         o.SF.push(sf);
@@ -221,8 +223,13 @@ function decodeAIR(data) {
         clsn2Default: /^Clsn2Default\s*:\s*(\d*)$/,
         clsn1: /^\Clsn1\s*:\s*(\d*)$/,
         clsn2: /^\Clsn2\s*:\s*(\d*)$/,
-        clsn: /^Clsn(\d)\[\s*(\d*)\s*\]\s*\=\s*(-?\d*?)\s*,\s*(-?\d*?)\s*,\s*(-?\d*?)\s*,\s*(-?\d*?)$/,
-        element: /^(-?\d*)\s*,\s*(\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)$/
+        clsn: new RegExp(
+            '^Clsn(\\d)\\[\\s*(\\d*)\\s*\\]\\s*\\=\\s*(-?\\d*?)\\s*,'
+            + '\\s*(-?\\d*?)\\s*,\\s*(-?\\d*?)\\s*,\\s*(-?\\d*?)$'
+        ),
+        element: (
+            /^(-?\d*)\s*,\s*(\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)$/
+        )
     };
 
     var actions = [];

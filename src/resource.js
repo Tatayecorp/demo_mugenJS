@@ -304,7 +304,7 @@ function decodeAIR(data) {
             }
             actions[action].elements.push(element);
         } else if (line.length != 0) {
-            console.log('AIR - Line unknown: ' + line);
+            console.log('AIR - Line unknown : ' + line);
         }
     });
     return actions;
@@ -336,7 +336,7 @@ function decodeDEF(text) {
                 value[match[1].toLowerCase()] = match[2];
             }
         } else if (line.length != 0) {
-            console.log('DEF - Line unknown: ' + line);
+            console.log('DEF - Line unknown : ' + line);
         }
     });
     return value;

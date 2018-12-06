@@ -12,28 +12,27 @@ var requestAnimFrame = (function() {
 })();
 
 // Create the canvas
-var canvas = document.createElement('canvas');
-var ctx = canvas.getContext('2d');
-var canvasWidth = 720;
-var canvasHeight = 540;
-var zoom = 1;
-canvas.width = canvasWidth * zoom;
-canvas.height = canvasHeight * zoom;
-document.body.appendChild(canvas);
+function createCanvas(canvasWidth, canvasHeight, zoom) {
+    var canvas = document.createElement('canvas');
+    canvas.width = canvasWidth * zoom;
+    canvas.height = canvasHeight * zoom;
+    document.body.appendChild(canvas);
+    return canvas.getContext('2d');
+}
 
 // The main game loop
 var lastTime;
 var fps;
-function main(player1, player2) {
+function main(ctx, player1, player2, canvasWidth, canvasHeight) {
     var now = Date.now();
     var dt = (now - lastTime) / 1000.0;
     fps = Math.ceil(1000 / (now - lastTime));
     update();
-    render(player1, player2);
+    render(ctx, player1, player2, canvasWidth, canvasHeight);
 
     lastTime = now;
     requestAnimFrame(function() {
-        main(player1, player2);
+        main(ctx, player1, player2, canvasWidth, canvasHeight);
     });
 }
 
@@ -53,10 +52,11 @@ function loadCharacters(characters, callback) {
     });
 }
 
-function init(player1, player2) {
-    reset();
+function init(player1, player2, canvasWidth, canvasHeight, zoom) {
+    var ctx = createCanvas(canvasWidth, canvasHeight, zoom);
+    reset(ctx, zoom);
     lastTime = Date.now();
-    main(player1, player2);
+    main(ctx, player1, player2, canvasWidth, canvasHeight);
 }
 
 // Game state
@@ -70,12 +70,12 @@ function update(dt) {
 }
 
 // Draw everything
-function render(player1, player2) {
+function render(ctx, player1, player2, canvasWidth, canvasHeight) {
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
     // Player 1
-    renderPlayer(player1);
-    renderPlayer(player2);
+    renderPlayer(ctx, player1);
+    renderPlayer(ctx, player2);
 
     // Infos debug
     var text  = 'FPS:' + fps + ' - action:' + player1.action ;
@@ -86,7 +86,7 @@ function render(player1, player2) {
     ctx.fillText(text, 10, 20);
 }
 
-function renderPlayer(player) {
+function renderPlayer(ctx, player) {
     ctx.save();
     ctx.scale(player.right, 1);
 
@@ -154,7 +154,7 @@ function renderPlayer(player) {
 }
 
 // Reset game to original state
-function reset() {
+function reset(ctx, zoom) {
     isGameOver = false;
     gameTime = 0;
     score = 0;

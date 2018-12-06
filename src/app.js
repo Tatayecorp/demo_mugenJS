@@ -1,4 +1,3 @@
-
 var requestAnimFrame = (function() {
     return window.requestAnimationFrame    ||
         window.webkitRequestAnimationFrame ||
@@ -24,7 +23,6 @@ document.body.appendChild(canvas);
 var lastTime;
 var fps;
 function main() {
-
     var now = Date.now();
     var dt = (now - lastTime) / 1000.0;
     fps = Math.ceil(1000 / (now - lastTime));
@@ -59,15 +57,12 @@ var isGameOver;
 
 // Update game objects
 function update(dt) {
-
     //handleInput(dt);
     //checkCollisions();
-
 }
 
 // Draw everything
 function render() {
-
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
     // Player 1
@@ -81,11 +76,9 @@ function render() {
     ctx.font = '10px  Lucida Console';
     ctx.textBaseline = 'bottom';
     ctx.fillText(text, 10, 20);
-
 }
 
 function renderPlayer(player) {
-
     ctx.save();
     ctx.scale(player.right, 1);
 
@@ -135,12 +128,10 @@ function renderPlayer(player) {
     }
 
     ctx.restore();
-
 }
 
 // Reset game to original state
 function reset() {
-
     isGameOver = false;
     gameTime = 0;
     score = 0;
@@ -157,5 +148,4 @@ function reset() {
     player2.pos = { x : canvasWidth / 2 + 70, y : canvasHeight - 70 };
     player2.palette = player2.ACT[0];
     player2.right = -1;
-
 }

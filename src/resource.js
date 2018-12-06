@@ -28,7 +28,6 @@ function imageDataToImage(imageData, operation) {
         return canvas;
     }
     else if (operation == 'flipH') {
-
         var canvas2 = document.createElement('canvas');
         canvas2.width = imageData.width;
         canvas2.height = imageData.height;
@@ -40,7 +39,6 @@ function imageDataToImage(imageData, operation) {
 }
 
 function decodePalette(buffer) {
-
     var palette = [];
     var dvp = new DataView(buffer);
     var offset = 0;
@@ -56,7 +54,6 @@ function decodePalette(buffer) {
 }
 
 function decodeACT(buffer) {
-
     var palette = [];
     var dvp = new DataView(buffer);
     var offset = 0;
@@ -69,11 +66,9 @@ function decodeACT(buffer) {
     }
 
     return palette;
-
 }
 
 function decodePCX(buffer, palette) {
-
     var o = {};
     var dv = new DataView(buffer);
     var offset = 0;
@@ -105,7 +100,6 @@ function decodePCX(buffer, palette) {
 
     o.palette = []; // 256 colors rgb
     if (typeof palette === 'undefined') {
-
         offset = buffer.byteLength - 769;
         o.signature = dv.getUint8(offset, true); offset += 1; // 12
 
@@ -118,9 +112,7 @@ function decodePCX(buffer, palette) {
         }
     }
     else {
-
         o.palette = palette;
-
     }
 
     offset = 128;
@@ -173,11 +165,9 @@ function decodePCX(buffer, palette) {
     imageData.data.set(data);
     ctx.putImageData(imageData, 0, 0);
     return canvas;
-
 }
 
 function decodeSFF(data) {
-
     var o = {};
     var dv = new DataView(data);
     var offset = 0;
@@ -196,7 +186,6 @@ function decodeSFF(data) {
     var i = 0;
     var pos = o.posFirstSubFile;
     while (i < o.nbImages) {
-
         var sf = {};
         var nextSubFile = dv.getUint32(offset, true); offset += 4;
         var subFileLength = dv.getUint32(offset, true); offset += 4;
@@ -221,13 +210,11 @@ function decodeSFF(data) {
         offset = nextSubFile;
         o.SF.push(sf);
         i++;
-
     }
     return { images : o.SF, palette : o.palette };
 }
 
 function decodeAIR(data) {
-
     var regex = {
         action : /^\[Begin Action\s*(\d*)\s*\]$/,
         clsn2Default : /^Clsn2Default\s*:\s*(\d*)$/,
@@ -244,19 +231,16 @@ function decodeAIR(data) {
     var clsn2 = null;
 
     lines.forEach(function(line) {
-
         line = line.replace(/^\s+/, '').replace(/;.*/, '').replace(/\s+$/, '');
 
         /* action */
         if (regex.action.test(line)) {
-
             var match = line.match(regex.action);
             action = match[1];
             clsn2Default = null;
             clsn1 = null;
             clsn2 = null;
             actions[action] = {};
-
         }
         /* clsn2Default */
         else if (regex.clsn2Default.test(line)) {
@@ -315,7 +299,6 @@ function decodeAIR(data) {
 }
 
 function decodeDEF(text) {
-
     var regex = {
         section: /^\[\s*([^\]]*)\s*\]$/,
         param: /^([\w\.\-\_]+)\s*=\s*(.*?)$/
@@ -326,7 +309,6 @@ function decodeDEF(text) {
     var section = null;
 
     lines.forEach(function(line) {
-
         line = line.replace(/^\s+/, '').replace(/;.*/, '').replace(/\s+$/, '');
 
         if (regex.section.test(line)) {
@@ -346,13 +328,11 @@ function decodeDEF(text) {
         else if (line.length != 0) {
             console.log('DEF - Line unknown : ' + line);
         }
-
     });
     return value;
 }
 
 (function() {
-
     function resource(path, name) {
         this.path = path;
         this.name = name;
@@ -363,12 +343,9 @@ function decodeDEF(text) {
     }
 
     resource.prototype = {
-
         load : function() {
-
             var resource = this;
             return new Promise(function(resolveAll, reject) {
-
                 // Load DEF
                 fetch(
                     resource.path
@@ -382,7 +359,6 @@ function decodeDEF(text) {
                 }).then(function(text) {
                     return decodeDEF(text);
                 }).then(function(data) {
-
                     resource.DEF = data;
 
                     // Load AIR
@@ -399,7 +375,6 @@ function decodeDEF(text) {
                             resource.AIR = decodeAIR(text);
                             resolve();
                         })
-
                     });
 
                     // Load SFF
@@ -416,7 +391,6 @@ function decodeDEF(text) {
                             resource.SFF = decodeSFF(arrayBuffer);
                             resolve();
                         })
-
                     });
 
                     // Load Palette 1, 1st test
@@ -433,21 +407,14 @@ function decodeDEF(text) {
                             resource.ACT.push(decodeACT(arrayBuffer));
                             resolve();
                         })
-
                     });
 
                     Promise.all([pAIR, pSFF, pACT]).then(function() {
                         resolveAll();
                     });
-
                 });
-
             });
-
         }
-
     };
-
     window.resource = resource;
-
 })();

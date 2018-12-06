@@ -42,7 +42,7 @@ function loadCharacters(characters, callback) {
     for (var i = 0, length = characters.length; i < length; i++) {
         var character = characters[i];
 
-        resources.push(new resource.resource(character.path, character.name));
+        resources.push(new resource.Resource(character.path, character.name));
     }
 
     Promise.all(resources.map(function(resource) {

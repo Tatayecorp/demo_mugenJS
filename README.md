@@ -54,7 +54,7 @@ app.loadCharacters(
         }
     ],
     function(resources) {
-        var player1 = new player.player(resources[0]);
+        var player1 = new player.Player(resources[0]);
         player1.pos = {
             x: canvasWidth / 2 - 200,
             y: canvasHeight - 140
@@ -62,7 +62,7 @@ app.loadCharacters(
         player1.palette = player1.SFF.palette;
         player1.right = 1;
 
-        var player2 = new player.player(resources[1]);
+        var player2 = new player.Player(resources[1]);
         player2.pos = {
             x: canvasWidth / 2 + 200,
             y: canvasHeight - 140

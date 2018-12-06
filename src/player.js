@@ -1,28 +1,28 @@
-function player (resource) {
-    this.pos = {
-        x: 0,
-        y: 0
-    };
-    this.action = 0;
-    this.currentFrame = 0;
-    this.currentTime = 0;
-    this.right = 1;
-    this.palette = null;
+class Player {
+    constructor(resource) {
+        this.pos = {
+            x: 0,
+            y: 0
+        };
+        this.action = 0;
+        this.currentFrame = 0;
+        this.currentTime = 0;
+        this.right = 1;
+        this.palette = null;
 
-    var hasOwn = Object.prototype.hasOwnProperty;
-    if (typeof resource != 'object') {
-        throw TypeError('player - ressource incorrect');
-    }
-    var properties = Object(resource);
-    for (var prop in properties) {
-        if (hasOwn.call(properties, prop)) {
-            this[prop] = properties[prop];
+        var hasOwn = Object.prototype.hasOwnProperty;
+        if (typeof resource != 'object') {
+            throw TypeError('player - ressource incorrect');
+        }
+        var properties = Object(resource);
+        for (var prop in properties) {
+            if (hasOwn.call(properties, prop)) {
+                this[prop] = properties[prop];
+            }
         }
     }
-}
 
-player.prototype = {
-    indexOf: function(groupNumber, imageNumber) {
+    indexOf(groupNumber, imageNumber) {
         if (this.SFF == null) {
             throw new TypeError('indexOf - SFF not defined.');
         }
@@ -39,5 +39,5 @@ player.prototype = {
 }
 
 module.exports = {
-    player: player
+    Player: Player
 };

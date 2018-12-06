@@ -235,6 +235,7 @@ function decodeAIR(data) {
     var actions = [];
     var lines = data.split(/\r\n|\r|\n/);
     var action = null;
+    var clsn2Default = null;
     var clsn1 = null;
     var clsn2 = null;
     var match;

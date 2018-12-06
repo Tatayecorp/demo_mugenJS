@@ -62,6 +62,7 @@ function init(player1, player2, canvasWidth, canvasHeight, zoom) {
 // Game state
 var gameTime = 0;
 var isGameOver;
+var score;
 
 // Update game objects
 function update(dt) {

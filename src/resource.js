@@ -207,7 +207,10 @@ function decodeSFF(data) {
         o.SF.push(sf);
         i++;
     }
-    return { images : o.SF, palette : o.palette };
+    return {
+        images : o.SF,
+        palette : o.palette
+    };
 }
 
 function decodeAIR(data) {
@@ -256,7 +259,12 @@ function decodeAIR(data) {
             /* clsn */
             var match = line.match(regex.clsn);
             if (action) {
-                var clsn = { x : +match[3], y : +match[4], x2 : +match[5], y2 : +match[6] };
+                var clsn = {
+                    x : +match[3],
+                    y : +match[4],
+                    x2 : +match[5],
+                    y2 : +match[6]
+                };
                 if (actions[action].clsn2Default) {
                     actions[action].clsn2Default.push(clsn);
                 } else if (clsn1) {
@@ -268,7 +276,13 @@ function decodeAIR(data) {
         } else if (regex.element.test(line)) {
             /* element */
             var match = line.match(regex.element);
-            var element = { groupNumber : +match[1], imageNumber : +match[2], x : +match[3], y : +match[4], time : +match[5] };
+            var element = {
+                groupNumber : +match[1],
+                imageNumber : +match[2],
+                x : +match[3],
+                y : +match[4],
+                time : +match[5]
+            };
             if (clsn1) {
                 element.clsn1 = clsn1;
             }

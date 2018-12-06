@@ -37,3 +37,7 @@ player.prototype = {
         return -1;
     }
 }
+
+module.exports = {
+    player: player
+};

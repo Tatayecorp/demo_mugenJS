@@ -10,13 +10,32 @@ module.exports = function(grunt) {
                 'Gruntfile.js',
                 'src/*.js'
             ]
+        },
+        browserify: {
+            dist: {
+                files: {
+                    'dist/mugen.js': [
+                        'src/player.js',
+                        'src/resource.js',
+                        'src/app.js'
+                    ]
+                }
+            },
+            options: {
+                alias: {
+                    'player': './src/player.js',
+                    'resource': './src/resource.js',
+                    'app': './src/app.js'
+                }
+            }
         }
     });
 
     // Load dependencies.
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-eslint');
 
     // Default task(s).
     grunt.registerTask('test', ['eslint']);
-    grunt.registerTask('default', ['eslint']);
+    grunt.registerTask('default', ['eslint', 'browserify']);
 };

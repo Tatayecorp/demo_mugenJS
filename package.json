@@ -23,6 +23,7 @@
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-browserify": "^5.3.0",
-    "grunt-eslint": "^21.0.0"
+    "grunt-eslint": "^21.0.0",
+    "uglifyify": "^5.0.1"
   }
 }

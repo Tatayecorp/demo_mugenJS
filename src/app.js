@@ -1,3 +1,6 @@
+var player = require('player');
+var resource = require('resource');
+
 var requestAnimFrame = (function() {
     return window.requestAnimationFrame    ||
         window.webkitRequestAnimationFrame ||
@@ -37,8 +40,7 @@ var player1;
 var player2;
 
 var resources = [];
-resources.push(new resource('chars', 'SF3_Ryu'));
-//resources.push(new resource('chars', 'sf3_gouki')); // Another character
+resources.push(new resource.resource('chars', 'SF3_Ryu'));
 Promise.all(resources.map(function(resource) {
     return resource.load();
 })).then(function() {
@@ -90,7 +92,7 @@ function renderPlayer(player) {
     );
     var i = player.indexOf(groupNumber, imageNumber);
 
-    var image = decodePCX(player.SFF.images[i].image, player.palette);
+    var image = resource.decodePCX(player.SFF.images[i].image, player.palette);
     var width = player.right === 1 ? 0 : image.width;
 
     // Fill image
@@ -153,7 +155,7 @@ function reset() {
 
     ctx.scale(zoom || 1, zoom || 1);
 
-    player1 = new player(resources[0]);
+    player1 = new player.player(resources[0]);
     player1.pos = {
         x: canvasWidth / 2 - 70,
         y: canvasHeight - 70
@@ -161,7 +163,7 @@ function reset() {
     player1.palette = player1.SFF.palette;
     player1.right = 1;
 
-    player2 = new player(resources[0]);
+    player2 = new player.player(resources[0]);
     //player2 = new player(resources[1]); // Another character
     player2.pos = {
         x: canvasWidth / 2 + 70,

@@ -342,89 +342,91 @@ function decodeDEF(text) {
     return value;
 }
 
-(function() {
-    function resource(path, name) {
-        this.path = path;
-        this.name = name;
-        this.DEF = {};
-        this.AIR = [];
-        this.SFF = {};
-        this.ACT = [];
-    }
+function resource(path, name) {
+    this.path = path;
+    this.name = name;
+    this.DEF = {};
+    this.AIR = [];
+    this.SFF = {};
+    this.ACT = [];
+}
 
-    resource.prototype = {
-        load: function() {
-            var resource = this;
-            return new Promise(function(resolveAll, reject) {
-                // Load DEF
-                fetch(
-                    resource.path
-                    + '/'
-                    + resource.name
-                    + '/'
-                    + resource.name
-                    + '.def'
-                ).then(function(response) {
-                    return response.text();
-                }).then(function(text) {
-                    return decodeDEF(text);
-                }).then(function(data) {
-                    resource.DEF = data;
+resource.prototype = {
+    load: function() {
+        var resource = this;
+        return new Promise(function(resolveAll, reject) {
+            // Load DEF
+            fetch(
+                resource.path
+                + '/'
+                + resource.name
+                + '/'
+                + resource.name
+                + '.def'
+            ).then(function(response) {
+                return response.text();
+            }).then(function(text) {
+                return decodeDEF(text);
+            }).then(function(data) {
+                resource.DEF = data;
 
-                    // Load AIR
-                    var pAIR = new Promise(function(resolve, reject) {
-                        fetch(
-                            resource.path
-                            + '/'
-                            + resource.name
-                            + '/'
-                            + data.files.anim
-                        ).then(function(response) {
-                            return response.text();
-                        }).then(function(text) {
-                            resource.AIR = decodeAIR(text);
-                            resolve();
-                        })
-                    });
+                // Load AIR
+                var pAIR = new Promise(function(resolve, reject) {
+                    fetch(
+                        resource.path
+                        + '/'
+                        + resource.name
+                        + '/'
+                        + data.files.anim
+                    ).then(function(response) {
+                        return response.text();
+                    }).then(function(text) {
+                        resource.AIR = decodeAIR(text);
+                        resolve();
+                    })
+                });
 
-                    // Load SFF
-                    var pSFF = new Promise(function(resolve, reject) {
-                        fetch(
-                            resource.path
-                            + '/'
-                            + resource.name
-                            + '/'
-                            + data.files.sprite
-                        ).then(function(response) {
-                            return response.arrayBuffer();
-                        }).then(function(arrayBuffer) {
-                            resource.SFF = decodeSFF(arrayBuffer);
-                            resolve();
-                        })
-                    });
+                // Load SFF
+                var pSFF = new Promise(function(resolve, reject) {
+                    fetch(
+                        resource.path
+                        + '/'
+                        + resource.name
+                        + '/'
+                        + data.files.sprite
+                    ).then(function(response) {
+                        return response.arrayBuffer();
+                    }).then(function(arrayBuffer) {
+                        resource.SFF = decodeSFF(arrayBuffer);
+                        resolve();
+                    })
+                });
 
-                    // Load Palette 1, 1st test
-                    var pACT = new Promise(function(resolve, reject) {
-                        fetch(
-                            resource.path
-                            + '/'
-                            + resource.name
-                            + '/'
-                            + data.files.pal1
-                        ).then(function(response) {
-                            return response.arrayBuffer();
-                        }).then(function(arrayBuffer) {
-                            resource.ACT.push(decodeACT(arrayBuffer));
-                            resolve();
-                        })
-                    });
+                // Load Palette 1, 1st test
+                var pACT = new Promise(function(resolve, reject) {
+                    fetch(
+                        resource.path
+                        + '/'
+                        + resource.name
+                        + '/'
+                        + data.files.pal1
+                    ).then(function(response) {
+                        return response.arrayBuffer();
+                    }).then(function(arrayBuffer) {
+                        resource.ACT.push(decodeACT(arrayBuffer));
+                        resolve();
+                    })
+                });
 
-                    Promise.all([pAIR, pSFF, pACT]).then(function() {
-                        resolveAll();
-                    });
+                Promise.all([pAIR, pSFF, pACT]).then(function() {
+                    resolveAll();
                 });
             });
-        }
-    };
-    window.resource = resource;
-})();
+        });
+    }
+};
+
+module.exports = {
+    decodePCX: decodePCX,
+    resource: resource
+};

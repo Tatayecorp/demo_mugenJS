@@ -1,7 +1,7 @@
 function player (resource) {
     this.pos = {
-        x : 0,
-        y : 0
+        x: 0,
+        y: 0
     };
     this.action = 0;
     this.currentFrame = 0;
@@ -22,7 +22,7 @@ function player (resource) {
 }
 
 player.prototype = {
-    indexOf : function(groupNumber, imageNumber) {
+    indexOf: function(groupNumber, imageNumber) {
         if (this.SFF == null) {
             throw new TypeError('indexOf - SFF not defined.');
         }

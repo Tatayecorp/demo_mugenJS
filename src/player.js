@@ -1,13 +1,13 @@
 
 function player ( resource ) {
-            
+
     this.pos = { x : 0, y : 0 };
     this.action = 0;
     this.currentFrame = 0;
     this.currentTime = 0;
     this.right = 1;
     this.palette = null;
-    
+
     var hasOwn = Object.prototype.hasOwnProperty;
     if ( typeof resource != 'object' ) {
         throw TypeError( 'player - ressource incorrect' );
@@ -18,7 +18,7 @@ function player ( resource ) {
             this[ prop ] = properties[ prop ];
         }
     }
-    
+
 }
 
 player.prototype = {

@@ -71,6 +71,8 @@ function decodePCX(buffer, palette) {
     var o = {};
     var dv = new DataView(buffer);
     var offset = 0;
+    var i;
+    var c;
 
     o.id = dv.getUint8(offset, true); offset += 1;
     o.version = dv.getUint8(offset, true); offset += 1;
@@ -84,8 +86,8 @@ function decodePCX(buffer, palette) {
     o.vres = dv.getUint16(offset, true); offset += 2;
 
     o.colorMap = []; // 16 colors rgb
-    for (var i = 0; i < 16; i++) {
-        var c = [];
+    for (i = 0; i < 16; i++) {
+        c = [];
         c[0] = dv.getUint8(offset, true); offset += 1;
         c[1] = dv.getUint8(offset, true); offset += 1;
         c[2] = dv.getUint8(offset, true); offset += 1;
@@ -102,8 +104,8 @@ function decodePCX(buffer, palette) {
         offset = buffer.byteLength - 769;
         o.signature = dv.getUint8(offset, true); offset += 1; // 12
 
-        for (var i = 0; i < 256; i++) {
-            var c = [];
+        for (i = 0; i < 256; i++) {
+            c = [];
             c[0] = dv.getUint8(offset, true); offset += 1;
             c[1] = dv.getUint8(offset, true); offset += 1;
             c[2] = dv.getUint8(offset, true); offset += 1;
@@ -137,7 +139,7 @@ function decodePCX(buffer, palette) {
             runcount = 1;
             value = b;
         }
-        for (var i = 0; i < runcount; i++) {
+        for (i = 0; i < runcount; i++) {
             if(value != 0) {
                 var j = (x + y * o.width) * 4;
                 data[j + 0] = o.palette[value][0];
@@ -228,13 +230,14 @@ function decodeAIR(data) {
     var action = null;
     var clsn1 = null;
     var clsn2 = null;
+    var match;
 
     lines.forEach(function(line) {
         line = line.replace(/^\s+/, '').replace(/;.*/, '').replace(/\s+$/, '');
 
         /* action */
         if (regex.action.test(line)) {
-            var match = line.match(regex.action);
+            match = line.match(regex.action);
             action = match[1];
             clsn2Default = null;
             clsn1 = null;
@@ -257,7 +260,7 @@ function decodeAIR(data) {
             }
         } else if (regex.clsn.test(line)) {
             /* clsn */
-            var match = line.match(regex.clsn);
+            match = line.match(regex.clsn);
             if (action) {
                 var clsn = {
                     x: +match[3],
@@ -275,7 +278,7 @@ function decodeAIR(data) {
             }
         } else if (regex.element.test(line)) {
             /* element */
-            var match = line.match(regex.element);
+            match = line.match(regex.element);
             var element = {
                 groupNumber: +match[1],
                 imageNumber: +match[2],
@@ -309,16 +312,17 @@ function decodeDEF(text) {
     var value = {};
     var lines = text.split(/\r\n|\r|\n/);
     var section = null;
+    var match;
 
     lines.forEach(function(line) {
         line = line.replace(/^\s+/, '').replace(/;.*/, '').replace(/\s+$/, '');
 
         if (regex.section.test(line)) {
-            var match = line.match(regex.section);
+            match = line.match(regex.section);
             section = match[1].toLowerCase();
             value[section] = {};
         } else if (regex.param.test(line)) {
-            var match = line.match(regex.param);
+            match = line.match(regex.param);
             if (section) {
                 value[section][match[1].toLowerCase()] = match[2];
             } else {

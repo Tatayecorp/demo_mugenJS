@@ -46,9 +46,9 @@ function decodePalette(buffer) {
     var offset = 0;
     for (var i = 0; i < 256; i++) {
         var c = [];
-        c[ 0 ] = dvp.getUint8(offset, true); offset += 1;
-        c[ 1 ] = dvp.getUint8(offset, true); offset += 1;
-        c[ 2 ] = dvp.getUint8(offset, true); offset += 1;
+        c[0] = dvp.getUint8(offset, true); offset += 1;
+        c[1] = dvp.getUint8(offset, true); offset += 1;
+        c[2] = dvp.getUint8(offset, true); offset += 1;
         palette.push(c);
     }
 
@@ -62,9 +62,9 @@ function decodeACT(buffer) {
     var offset = 0;
     for (var i = 0; i < 256; i++) {
         var c = [];
-        c[ 0 ] = dvp.getUint8(offset, true); offset += 1;
-        c[ 1 ] = dvp.getUint8(offset, true); offset += 1;
-        c[ 2 ] = dvp.getUint8(offset, true); offset += 1;
+        c[0] = dvp.getUint8(offset, true); offset += 1;
+        c[1] = dvp.getUint8(offset, true); offset += 1;
+        c[2] = dvp.getUint8(offset, true); offset += 1;
         palette.unshift(c);
     }
 
@@ -92,9 +92,9 @@ function decodePCX(buffer, palette) {
     o.colorMap = []; // 16 colors rgb
     for (var i = 0; i < 16; i++) {
         var c = [];
-        c[ 0 ] = dv.getUint8(offset, true); offset += 1;
-        c[ 1 ] = dv.getUint8(offset, true); offset += 1;
-        c[ 2 ] = dv.getUint8(offset, true); offset += 1;
+        c[0] = dv.getUint8(offset, true); offset += 1;
+        c[1] = dv.getUint8(offset, true); offset += 1;
+        c[2] = dv.getUint8(offset, true); offset += 1;
         o.colorMap.push(c);
     }
 
@@ -111,9 +111,9 @@ function decodePCX(buffer, palette) {
 
         for (var i = 0; i < 256; i++) {
             var c = [];
-            c[ 0 ] = dv.getUint8(offset, true); offset += 1;
-            c[ 1 ] = dv.getUint8(offset, true); offset += 1;
-            c[ 2 ] = dv.getUint8(offset, true); offset += 1;
+            c[0] = dv.getUint8(offset, true); offset += 1;
+            c[1] = dv.getUint8(offset, true); offset += 1;
+            c[2] = dv.getUint8(offset, true); offset += 1;
             o.palette.push(c);
         }
     }
@@ -133,7 +133,7 @@ function decodePCX(buffer, palette) {
     var data = new Uint8ClampedArray(o.width * o.height * 4);
     i = 0;
     while (i < o.width * o.height * 4) {
-        data[ i++ ] = 0;
+        data[i++] = 0;
     }
 
     while (y < o.height) {
@@ -151,10 +151,10 @@ function decodePCX(buffer, palette) {
         for (var i = 0; i < runcount; i++) {
             if(value != 0) {
                 var j = (x + y * o.width) * 4;
-                data[ j + 0 ] = o.palette[ value ][ 0 ];
-                data[ j + 1 ] = o.palette[ value ][ 1 ];
-                data[ j + 2 ] = o.palette[ value ][ 2 ];
-                data[ j + 3 ] = 255;
+                data[j + 0] = o.palette[value][0];
+                data[j + 1] = o.palette[value][1];
+                data[j + 2] = o.palette[value][2];
+                data[j + 3] = 255;
             }
             x++;
             if (x >= o.width) {
@@ -251,17 +251,17 @@ function decodeAIR(data) {
         if (regex.action.test(line)) {
 
             var match = line.match(regex.action);
-            action = match[ 1 ];
+            action = match[1];
             clsn2Default = null;
             clsn1 = null;
             clsn2 = null;
-            actions[ action ] = {};
+            actions[action] = {};
 
         }
         /* clsn2Default */
         else if (regex.clsn2Default.test(line)) {
             if (action) {
-                actions[ action ].clsn2Default = [];
+                actions[action].clsn2Default = [];
             }
         }
         /* clsn1 */
@@ -280,9 +280,9 @@ function decodeAIR(data) {
         else if (regex.clsn.test(line)){
             var match = line.match(regex.clsn);
             if (action) {
-                var clsn = { x : +match[ 3 ], y : +match[ 4 ], x2 : +match[ 5 ], y2 : +match[ 6 ] };
-                if (actions[ action ].clsn2Default) {
-                    actions[ action ].clsn2Default.push(clsn);
+                var clsn = { x : +match[3], y : +match[4], x2 : +match[5], y2 : +match[6] };
+                if (actions[action].clsn2Default) {
+                    actions[action].clsn2Default.push(clsn);
                 }
                 else if (clsn1) {
                     clsn1.push(clsn);
@@ -295,17 +295,17 @@ function decodeAIR(data) {
         /* element */
         else if (regex.element.test(line)){
             var match = line.match(regex.element);
-            var element = { groupNumber : +match[ 1 ], imageNumber : +match[ 2 ], x : +match[ 3 ], y : +match[ 4 ], time : +match[ 5 ] };
+            var element = { groupNumber : +match[1], imageNumber : +match[2], x : +match[3], y : +match[4], time : +match[5] };
             if (clsn1) {
                 element.clsn1 = clsn1;
             }
             if (clsn2) {
                 element.clsn2 = clsn2;
             }
-            if (!actions[ action ].elements) {
-                actions[ action ].elements = [];
+            if (!actions[action].elements) {
+                actions[action].elements = [];
             }
-            actions[ action ].elements.push(element);
+            actions[action].elements.push(element);
         }
         else if (line.length != 0) {
             console.log('AIR - Line unknown : ' + line);
@@ -331,16 +331,16 @@ function decodeDEF(text) {
 
         if (regex.section.test(line)) {
             var match = line.match(regex.section);
-            section = match[ 1 ].toLowerCase();
-            value[ section ] = {};
+            section = match[1].toLowerCase();
+            value[section] = {};
         }
         else if (regex.param.test(line)) {
             var match = line.match(regex.param);
             if (section) {
-                value[ section ][ match[ 1 ].toLowerCase() ] = match[ 2 ];
+                value[section][match[1].toLowerCase()] = match[2];
             }
             else {
-                value[ match[ 1 ].toLowerCase() ] = match[ 2 ];
+                value[match[1].toLowerCase()] = match[2];
             }
         }
         else if (line.length != 0) {
@@ -436,7 +436,7 @@ function decodeDEF(text) {
 
                     });
 
-                    Promise.all([ pAIR, pSFF, pACT ]).then(function() {
+                    Promise.all([pAIR, pSFF, pACT]).then(function() {
                         resolveAll();
                     });
 

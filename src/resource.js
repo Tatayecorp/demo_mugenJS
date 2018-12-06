@@ -343,17 +343,17 @@ function decodeDEF(text) {
     return value;
 }
 
-function resource(path, name) {
-    this.path = path;
-    this.name = name;
-    this.DEF = {};
-    this.AIR = [];
-    this.SFF = {};
-    this.ACT = [];
-}
+class Resource {
+    constructor(path, name) {
+        this.path = path;
+        this.name = name;
+        this.DEF = {};
+        this.AIR = [];
+        this.SFF = {};
+        this.ACT = [];
+    }
 
-resource.prototype = {
-    load: function() {
+    load() {
         var resource = this;
         return new Promise(function(resolveAll, reject) {
             // Load DEF
@@ -425,9 +425,9 @@ resource.prototype = {
             });
         });
     }
-};
+}
 
 module.exports = {
     decodePCX: decodePCX,
-    resource: resource
+    Resource: Resource
 };

@@ -22,5 +22,9 @@
         "object-curly-spacing": ["error", "never"],
         "array-bracket-spacing": ["error", "never"],
         "computed-property-spacing": ["error", "never"]
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
     }
 }

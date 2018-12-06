@@ -26,31 +26,49 @@ The sprites file (.sff) contains every image (sprite) used by a stage, character
 
 Palette files (.act) are the 256 colour data files that determine what colours go where on a character. A single M.U.G.E.N character can have up to 12 act files that can be read by the M.U.G.E.N engine - these are determined by the .def file. 
 
-### Test MugenJS
+### Usage
 
-#### To test with another character
-
-1. put character files in chars directory (ex. chars/sf3_gouki)
-2. in src/app.js add the resource 
-```js
-resources.push( new resource( 'chars', 'sf3_gouki' ) ); // Another character
+1. [Install Node.js](https://nodejs.org/en/download/package-manager/);
+2. [Install the dependencies](https://docs.npmjs.com/cli/install);
+3. [Run grunt](https://gruntjs.com/getting-started) without arguments;
+4. Import `dist/mugen.js` file on page;
+```html
+<script type="text/javascript" src="mugen.js"></script>
 ```
-3. in src/app.js change resource of player2
+5. Load characters and init **mugen.js**;
 ```js
-player2 = new player( resources[ 1 ] ); // Another character
-```
+var app = require('app');
+var player = require('player');
 
-#### To change animation
+app.loadCharacters(
+    [
+        {
+            'path': 'chars',
+            'name': 'Nanoha_Tsukikage'
+        },
+        {
+            'path': 'chars',
+            'name': 'Natsuka_Fuou'
+        }
+    ],
+    function(resources) {
+        var player1 = new player.player(resources[0]);
+        player1.pos = {
+            x: 320 / 2 - 70,
+            y: 240 - 70
+        };
+        player1.palette = player1.SFF.palette;
+        player1.right = 1;
 
-1. in src/app.js add a line player1.action
-```js
-player1.action = 11; // crouch
-```
+        var player2 = new player.player(resources[1]);
+        player2.pos = {
+            x: 320 / 2 + 70,
+            y: 240 - 70
+        };
+        player2.palette = player2.SFF.palette;
+        player2.right = -1;
 
-#### To change palette ###
-
-1. in src/app.js change player1.palette
-```js
-player1.palette = player1.SFF.palette; // default
-player1.palette = player2.ACT[ 0 ]; // first additionnal palette
+        app.init(player1, player2);
+    }
+);
 ```

@@ -31,25 +31,25 @@ Palette files (.act) are the 256 colour data files that determine what colours g
 #### To test with another character
 
 1. put character files in chars directory (ex. chars/sf3_gouki)
-2. in js/app.js add the resource 
+2. in src/app.js add the resource 
 ```js
 resources.push( new resource( 'chars', 'sf3_gouki' ) ); // Another character
 ```
-3. in js/app.js change resource of player2
+3. in src/app.js change resource of player2
 ```js
 player2 = new player( resources[ 1 ] ); // Another character
 ```
 
 #### To change animation
 
-1. in js/app.js add a line player1.action
+1. in src/app.js add a line player1.action
 ```js
 player1.action = 11; // crouch
 ```
 
 #### To change palette ###
 
-1. in js/app.js change player1.palette
+1. in src/app.js change player1.palette
 ```js
 player1.palette = player1.SFF.palette; // default
 player1.palette = player2.ACT[ 0 ]; // first additionnal palette

@@ -1,6 +1,4 @@
-
 function player (resource) {
-
     this.pos = { x : 0, y : 0 };
     this.action = 0;
     this.currentFrame = 0;
@@ -18,7 +16,6 @@ function player (resource) {
             this[prop] = properties[prop];
         }
     }
-
 }
 
 player.prototype = {

@@ -33,7 +33,7 @@ function main() {
 
     lastTime = now;
     requestAnimFrame( main );
-};
+}
 
 var player1;
 var player2;
@@ -59,7 +59,7 @@ function update( dt ) {
     //handleInput( dt );
     //checkCollisions();
 
-};
+}
 
 // Draw everything
 function render() {
@@ -78,7 +78,7 @@ function render() {
     ctx.textBaseline = 'bottom';
     ctx.fillText( text, 10, 20 );
 
-};
+}
 
 function renderPlayer( player ) {
 
@@ -152,4 +152,4 @@ function reset() {
     player2.palette = player2.ACT[ 0 ];
     player2.right = -1;
 
-};
+}

@@ -4,7 +4,9 @@ DataView.prototype.getString = function( offset, length ) {
     var charCode;
     for ( var i = 0; i < length; i++ ) {
         charCode = this.getUint8( i + offset );
-        if ( charCode === 0 ) { break; }
+        if ( charCode === 0 ) {
+            break;
+        }
         str += String.fromCharCode( charCode );
     }
     return str;
@@ -130,7 +132,9 @@ function decodePCX( buffer, palette ) {
 
     var data = new Uint8ClampedArray( o.width * o.height * 4 );
     i = 0;
-    while ( i < o.width * o.height * 4 ) { data[ i++ ] = 0; }
+    while ( i < o.width * o.height * 4 ) {
+        data[ i++ ] = 0;
+    }
 
     while ( y < o.height ) {
         var b = dv.getUint8( offset, true ); offset += 1;
@@ -211,7 +215,9 @@ function decodeSFF( data ) {
                 sf.image = dv.extractBuffer( offset, nextSubFile );
             }
         }
-        if ( i == 0 ) { o.palette = decodePalette( dv.extractBuffer( nextSubFile - 767, nextSubFile ) ); }
+        if ( i == 0 ) {
+            o.palette = decodePalette(dv.extractBuffer(nextSubFile - 767, nextSubFile));
+        }
         offset = nextSubFile;
         o.SF.push( sf );
         i++;
@@ -275,18 +281,30 @@ function decodeAIR( data ) {
             var match = line.match( regex.clsn );
             if ( action ) {
                 var clsn = { x : +match[ 3 ], y : +match[ 4 ], x2 : +match[ 5 ], y2 : +match[ 6 ] };
-                if ( actions[ action ].clsn2Default ) { actions[ action ].clsn2Default.push( clsn ); }
-                else if ( clsn1 ) { clsn1.push( clsn ); }
-                else if ( clsn2 ) { clsn2.push( clsn ); }
+                if ( actions[ action ].clsn2Default ) {
+                    actions[ action ].clsn2Default.push( clsn );
+                }
+                else if ( clsn1 ) {
+                    clsn1.push( clsn );
+                }
+                else if ( clsn2 ) {
+                    clsn2.push( clsn );
+                }
             }
         }
         /* element */
         else if ( regex.element.test( line ) ){
             var match = line.match( regex.element );
             var element = { groupNumber : +match[ 1 ], imageNumber : +match[ 2 ], x : +match[ 3 ], y : +match[ 4 ], time : +match[ 5 ] };
-            if ( clsn1 ) { element.clsn1 = clsn1; }
-            if ( clsn2 ) { element.clsn2 = clsn2; }
-            if ( !actions[ action ].elements ) { actions[ action ].elements = []; }
+            if ( clsn1 ) {
+                element.clsn1 = clsn1;
+            }
+            if ( clsn2 ) {
+                element.clsn2 = clsn2;
+            }
+            if ( !actions[ action ].elements ) {
+                actions[ action ].elements = [];
+            }
             actions[ action ].elements.push( element );
         }
         else if ( line.length != 0 ) {
@@ -418,7 +436,9 @@ function decodeDEF( text ) {
 
                     } );
 
-                    Promise.all( [ pAIR, pSFF, pACT ] ).then( function() { resolveAll(); } );
+                    Promise.all( [ pAIR, pSFF, pACT ] ).then(function() {
+                        resolveAll();
+                    });
 
                 } );
 

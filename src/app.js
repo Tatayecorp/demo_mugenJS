@@ -14,9 +14,9 @@ var requestAnimFrame = (function() {
 // Create the canvas
 var canvas = document.createElement('canvas');
 var ctx = canvas.getContext('2d');
-var canvasWidth = 320;
-var canvasHeight = 240;
-var zoom = 2;
+var canvasWidth = 720;
+var canvasHeight = 540;
+var zoom = 1;
 canvas.width = canvasWidth * zoom;
 canvas.height = canvasHeight * zoom;
 document.body.appendChild(canvas);

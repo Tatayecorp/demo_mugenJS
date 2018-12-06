@@ -41,7 +41,11 @@ var player2;
 var resources = [];
 resources.push( new resource( 'chars', 'SF3_Ryu' ) );
 //resources.push( new resource( 'chars', 'sf3_gouki' ) ); // Another character
-Promise.all( resources.map( function( resource ) { return resource.load(); } ) ).then( function() { init(); } );
+Promise.all(resources.map(function(resource) {
+    return resource.load();
+})).then(function() {
+    init();
+});
 
 function init() {
     reset();
@@ -125,7 +129,9 @@ function renderPlayer( player ) {
     if ( player.currentTime >= player.AIR[ player.action ].elements[ player.currentFrame ].time ) {
         player.currentTime = 0;
         player.currentFrame++;
-        if ( player.currentFrame >= player.AIR[ player.action ].elements.length ) { player.currentFrame = 0; }
+        if ( player.currentFrame >= player.AIR[ player.action ].elements.length ) {
+            player.currentFrame = 0;
+        }
     }
 
     ctx.restore();

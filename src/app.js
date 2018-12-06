@@ -96,8 +96,7 @@ function renderPlayer(player) {
     // Fill collision box // TODO Wrong in scale
     if (player.AIR[player.action].clsn2Default) {
         var clsn = player.AIR[action].clsn2Default;
-    }
-    else if (player.AIR[player.action].elements[player.currentFrame].clsn2) {
+    } else if (player.AIR[player.action].elements[player.currentFrame].clsn2) {
         var clsn = player.AIR[player.action].elements[player.currentFrame].clsn2;
     }
     if (clsn) {

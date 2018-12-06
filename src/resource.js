@@ -26,8 +26,7 @@ function imageDataToImage(imageData, operation) {
 
     if (typeof operation === 'undefined') {
         return canvas;
-    }
-    else if (operation == 'flipH') {
+    } else if (operation == 'flipH') {
         var canvas2 = document.createElement('canvas');
         canvas2.width = imageData.width;
         canvas2.height = imageData.height;
@@ -110,8 +109,7 @@ function decodePCX(buffer, palette) {
             c[2] = dv.getUint8(offset, true); offset += 1;
             o.palette.push(c);
         }
-    }
-    else {
+    } else {
         o.palette = palette;
     }
 
@@ -135,8 +133,7 @@ function decodePCX(buffer, palette) {
         if ((b & 0xC0) == 0xC0) {
             runcount = (b & 0x3F);
             value = dv.getUint8(offset, true); offset += 1;
-        }
-        else {
+        } else {
             runcount = 1;
             value = b;
         }
@@ -199,8 +196,7 @@ function decodeSFF(data) {
         if (sf.indexPreviousCopy == 0) {
             if(sf.samePalette == 0) {
                 sf.image = dv.extractBuffer(offset, nextSubFile);
-            }
-            else {
+            } else {
                 sf.image = dv.extractBuffer(offset, nextSubFile);
             }
         }
@@ -241,43 +237,36 @@ function decodeAIR(data) {
             clsn1 = null;
             clsn2 = null;
             actions[action] = {};
-        }
-        /* clsn2Default */
-        else if (regex.clsn2Default.test(line)) {
+        } else if (regex.clsn2Default.test(line)) {
+            /* clsn2Default */
             if (action) {
                 actions[action].clsn2Default = [];
             }
-        }
-        /* clsn1 */
-        else if (regex.clsn1.test(line)) {
+        } else if (regex.clsn1.test(line)) {
+            /* clsn1 */
             if (action) {
                 clsn1 = [];
             }
-        }
-        /* clsn2 */
-        else if (regex.clsn2.test(line)) {
+        } else if (regex.clsn2.test(line)) {
+            /* clsn2 */
             if (action) {
                 clsn2 = [];
             }
-        }
-        /* clsn */
-        else if (regex.clsn.test(line)){
+        } else if (regex.clsn.test(line)) {
+            /* clsn */
             var match = line.match(regex.clsn);
             if (action) {
                 var clsn = { x : +match[3], y : +match[4], x2 : +match[5], y2 : +match[6] };
                 if (actions[action].clsn2Default) {
                     actions[action].clsn2Default.push(clsn);
-                }
-                else if (clsn1) {
+                } else if (clsn1) {
                     clsn1.push(clsn);
-                }
-                else if (clsn2) {
+                } else if (clsn2) {
                     clsn2.push(clsn);
                 }
             }
-        }
-        /* element */
-        else if (regex.element.test(line)){
+        } else if (regex.element.test(line)) {
+            /* element */
             var match = line.match(regex.element);
             var element = { groupNumber : +match[1], imageNumber : +match[2], x : +match[3], y : +match[4], time : +match[5] };
             if (clsn1) {
@@ -290,8 +279,7 @@ function decodeAIR(data) {
                 actions[action].elements = [];
             }
             actions[action].elements.push(element);
-        }
-        else if (line.length != 0) {
+        } else if (line.length != 0) {
             console.log('AIR - Line unknown : ' + line);
         }
     });
@@ -315,17 +303,14 @@ function decodeDEF(text) {
             var match = line.match(regex.section);
             section = match[1].toLowerCase();
             value[section] = {};
-        }
-        else if (regex.param.test(line)) {
+        } else if (regex.param.test(line)) {
             var match = line.match(regex.param);
             if (section) {
                 value[section][match[1].toLowerCase()] = match[2];
-            }
-            else {
+            } else {
                 value[match[1].toLowerCase()] = match[2];
             }
-        }
-        else if (line.length != 0) {
+        } else if (line.length != 0) {
             console.log('DEF - Line unknown : ' + line);
         }
     });

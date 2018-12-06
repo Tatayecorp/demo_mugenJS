@@ -1,4 +1,3 @@
-var player = require('player');
 var resource = require('resource');
 
 var requestAnimFrame = (function() {
@@ -25,32 +24,39 @@ document.body.appendChild(canvas);
 // The main game loop
 var lastTime;
 var fps;
-function main() {
+function main(player1, player2) {
     var now = Date.now();
     var dt = (now - lastTime) / 1000.0;
     fps = Math.ceil(1000 / (now - lastTime));
     update();
-    render();
+    render(player1, player2);
 
     lastTime = now;
-    requestAnimFrame(main);
+    requestAnimFrame(function() {
+        main(player1, player2);
+    });
 }
 
-var player1;
-var player2;
+function loadCharacters(characters, callback) {
+    var resources = [];
 
-var resources = [];
-resources.push(new resource.resource('chars', 'SF3_Ryu'));
-Promise.all(resources.map(function(resource) {
-    return resource.load();
-})).then(function() {
-    init();
-});
+    for (var i = 0, length = characters.length; i < length; i++) {
+        var character = characters[i];
 
-function init() {
+        resources.push(new resource.resource(character.path, character.name));
+    }
+
+    Promise.all(resources.map(function(resource) {
+        return resource.load();
+    })).then(function() {
+        callback.call(this, resources);
+    });
+}
+
+function init(player1, player2) {
     reset();
     lastTime = Date.now();
-    main();
+    main(player1, player2);
 }
 
 // Game state
@@ -64,7 +70,7 @@ function update(dt) {
 }
 
 // Draw everything
-function render() {
+function render(player1, player2) {
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
     // Player 1
@@ -154,21 +160,9 @@ function reset() {
     score = 0;
 
     ctx.scale(zoom || 1, zoom || 1);
-
-    player1 = new player.player(resources[0]);
-    player1.pos = {
-        x: canvasWidth / 2 - 70,
-        y: canvasHeight - 70
-    };
-    player1.palette = player1.SFF.palette;
-    player1.right = 1;
-
-    player2 = new player.player(resources[0]);
-    //player2 = new player(resources[1]); // Another character
-    player2.pos = {
-        x: canvasWidth / 2 + 70,
-        y: canvasHeight - 70
-    };
-    player2.palette = player2.ACT[0];
-    player2.right = -1;
 }
+
+module.exports = {
+    init: init,
+    loadCharacters: loadCharacters
+};

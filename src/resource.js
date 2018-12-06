@@ -35,7 +35,7 @@ function imageDataToImage( imageData, operation ) {
         image2.drawImage( canvas, -imageData.width, 0 );
         return canvas2;
     }
-};
+}
 
 function decodePalette( buffer ) {
 
@@ -342,7 +342,7 @@ function decodeDEF( text ) {
         this.AIR = [];
         this.SFF = {};
         this.ACT = [];
-    };
+    }
 
     resource.prototype = {
 

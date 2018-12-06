@@ -22,6 +22,7 @@ module.exports = function(grunt) {
                 }
             },
             options: {
+                transform: ['uglifyify'],
                 alias: {
                     'player': './src/player.js',
                     'resource': './src/resource.js',

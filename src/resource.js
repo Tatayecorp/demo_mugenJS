@@ -208,19 +208,19 @@ function decodeSFF(data) {
         i++;
     }
     return {
-        images : o.SF,
-        palette : o.palette
+        images: o.SF,
+        palette: o.palette
     };
 }
 
 function decodeAIR(data) {
     var regex = {
-        action : /^\[Begin Action\s*(\d*)\s*\]$/,
-        clsn2Default : /^Clsn2Default\s*:\s*(\d*)$/,
-        clsn1 : /^\Clsn1\s*:\s*(\d*)$/,
-        clsn2 : /^\Clsn2\s*:\s*(\d*)$/,
-        clsn : /^Clsn(\d)\[\s*(\d*)\s*\]\s*\=\s*(-?\d*?)\s*,\s*(-?\d*?)\s*,\s*(-?\d*?)\s*,\s*(-?\d*?)$/,
-        element : /^(-?\d*)\s*,\s*(\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)$/
+        action: /^\[Begin Action\s*(\d*)\s*\]$/,
+        clsn2Default: /^Clsn2Default\s*:\s*(\d*)$/,
+        clsn1: /^\Clsn1\s*:\s*(\d*)$/,
+        clsn2: /^\Clsn2\s*:\s*(\d*)$/,
+        clsn: /^Clsn(\d)\[\s*(\d*)\s*\]\s*\=\s*(-?\d*?)\s*,\s*(-?\d*?)\s*,\s*(-?\d*?)\s*,\s*(-?\d*?)$/,
+        element: /^(-?\d*)\s*,\s*(\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)\s*,\s*(-?\d*)$/
     };
 
     var actions = [];
@@ -260,10 +260,10 @@ function decodeAIR(data) {
             var match = line.match(regex.clsn);
             if (action) {
                 var clsn = {
-                    x : +match[3],
-                    y : +match[4],
-                    x2 : +match[5],
-                    y2 : +match[6]
+                    x: +match[3],
+                    y: +match[4],
+                    x2: +match[5],
+                    y2: +match[6]
                 };
                 if (actions[action].clsn2Default) {
                     actions[action].clsn2Default.push(clsn);
@@ -277,11 +277,11 @@ function decodeAIR(data) {
             /* element */
             var match = line.match(regex.element);
             var element = {
-                groupNumber : +match[1],
-                imageNumber : +match[2],
-                x : +match[3],
-                y : +match[4],
-                time : +match[5]
+                groupNumber: +match[1],
+                imageNumber: +match[2],
+                x: +match[3],
+                y: +match[4],
+                time: +match[5]
             };
             if (clsn1) {
                 element.clsn1 = clsn1;
@@ -294,7 +294,7 @@ function decodeAIR(data) {
             }
             actions[action].elements.push(element);
         } else if (line.length != 0) {
-            console.log('AIR - Line unknown : ' + line);
+            console.log('AIR - Line unknown: ' + line);
         }
     });
     return actions;
@@ -325,7 +325,7 @@ function decodeDEF(text) {
                 value[match[1].toLowerCase()] = match[2];
             }
         } else if (line.length != 0) {
-            console.log('DEF - Line unknown : ' + line);
+            console.log('DEF - Line unknown: ' + line);
         }
     });
     return value;
@@ -342,7 +342,7 @@ function decodeDEF(text) {
     }
 
     resource.prototype = {
-        load : function() {
+        load: function() {
             var resource = this;
             return new Promise(function(resolveAll, reject) {
                 // Load DEF

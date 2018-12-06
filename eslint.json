@@ -1,0 +1,26 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-alert": "error",
+        "no-console": "off",
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "no-control-regex": "off",
+        "no-empty": "off",
+        "no-useless-escape": "off",
+        "no-eval": "error",
+        "brace-style": "error",
+        "comma-dangle": "error",
+        "comma-spacing": "error",
+        "comma-style": "error",
+        "indent": ["error", 4],
+        "max-len": "error",
+        "no-tabs": "error",
+        "no-trailing-spaces": "error",
+        "no-whitespace-before-property": "error",
+        "space-in-parens": ["error", "never"],
+        "object-curly-spacing": ["error", "never"],
+        "array-bracket-spacing": ["error", "never"],
+        "computed-property-spacing": ["error", "never"]
+    }
+}

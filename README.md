@@ -1,4 +1,4 @@
-# MugenJS
+# MugenJS Renderer
 
 This project use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files) to display and animate into canvas.
 
@@ -31,11 +31,11 @@ Palette files (.act) are the 256 colour data files that determine what colours g
 1. [Install Node.js](https://nodejs.org/en/download/package-manager/);
 2. [Install the dependencies](https://docs.npmjs.com/cli/install);
 3. [Run grunt](https://gruntjs.com/getting-started) without arguments;
-4. Import `dist/mugen.js` file on page;
+4. Import `dist/mugen_renderer.js` file on page;
 ```html
-<script type="text/javascript" src="mugen.js"></script>
+<script type="text/javascript" src="mugen_renderer.js"></script>
 ```
-5. Load characters and init **mugen.js**;
+5. Load characters and init **mugen_renderer.js**;
 ```js
 var app = require('app');
 var player = require('player');

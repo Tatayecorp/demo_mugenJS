@@ -11,7 +11,7 @@ var requestAnimFrame = (function() {
         };
 })();
 
-class MugenJSApp {
+class RoundOneJSApp {
     constructor(player1, player2, canvasWidth, canvasHeight, zoom) {
         this.player1 = player1;
         this.player2 = player2;
@@ -174,5 +174,5 @@ class MugenJSApp {
 }
 
 module.exports = {
-    MugenJSApp: MugenJSApp
+    RoundOneJSApp: RoundOneJSApp
 };

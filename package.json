@@ -1,5 +1,5 @@
 {
-  "name": "mugenjs_renderer",
+  "name": "roundonejs_mugen_renderer",
   "version": "1.0.0",
   "description": "This project use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files) to display and animate into canvas.",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mugenjs/mugenjs.git"
+    "url": "git+https://github.com/roundonejs/roundonejs_mugen_renderer.git"
   },
   "keywords": [
     "mugen",
@@ -17,9 +17,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mugenjs/mugenjs/issues"
+    "url": "https://github.com/roundonejs/roundonejs_mugen_renderer/issues"
   },
-  "homepage": "https://github.com/mugenjs/mugenjs#readme",
+  "homepage": "https://github.com/roundonejs/roundonejs_mugen_renderer#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",

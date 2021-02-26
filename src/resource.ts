@@ -1,3 +1,43 @@
+type DEFType = Record<string, string|Record<string, string>>;
+
+interface CLSN {
+    x: number;
+    y: number;
+    x2: number;
+    y2: number;
+}
+interface AIRElement {
+    groupNumber: number;
+    imageNumber: number;
+    x: number;
+    y: number;
+    time: number;
+    clsn1?: CLSN;
+    clsn2?: CLSN;
+}
+interface AIRSingleType {
+    elements: AIRElement[];
+    clsn2Default: CLSN[];
+}
+type AIRType = AIRSingleType[];
+
+interface SFType {
+    x: number;
+    y: number;
+    groupNumber: number;
+    imageNumber: number;
+    indexPreviousCopy: number;
+    samePalette: number;
+    image: ArrayBuffer;
+}
+type Palette = number[][];
+interface SFFType {
+    images: SFType[],
+    palette: Palette
+}
+
+type ACTType = Palette;
+
 // For signature & version
 DataView.prototype.getString = function(offset, length) {
     var str = '';
@@ -185,7 +225,7 @@ function decodeSFF(data) {
     var i = 0;
     var pos = o.posFirstSubFile;
     while (i < o.nbImages) {
-        var sf = {};
+        var sf: SFType = {};
         var nextSubFile = dv.getUint32(offset, true); offset += 4;
         var subFileLength = dv.getUint32(offset, true); offset += 4;
         sf.x = dv.getUint16(offset, true); offset += 2;
@@ -287,7 +327,7 @@ function decodeAIR(data) {
         } else if (regex.element.test(line)) {
             /* element */
             match = line.match(regex.element);
-            var element = {
+            var element: AIRElement = {
                 groupNumber: +match[1],
                 imageNumber: +match[2],
                 x: +match[3],
@@ -344,6 +384,13 @@ function decodeDEF(text) {
 }
 
 export class Resource {
+    path: string;
+    name: string;
+    DEF: DEFType;
+    AIR: AIRType;
+    SFF: SFFType;
+    ACT: ACTType;
+
     constructor(path, name) {
         this.path = path;
         this.name = name;

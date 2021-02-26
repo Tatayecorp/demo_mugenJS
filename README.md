@@ -30,7 +30,10 @@ Palette files (.act) are the 256 colour data files that determine what colours g
 
 1. [Install Node.js](https://nodejs.org/en/download/package-manager/);
 2. [Install the dependencies](https://docs.npmjs.com/cli/install);
-3. [Run grunt](https://gruntjs.com/getting-started) without arguments;
+3. Run node command build;
+```
+npm run build
+```
 4. Import `dist/roundonejs_mugen_renderer.js` file on page;
 ```html
 <script type="text/javascript" src="roundonejs_mugen_renderer.js"></script>

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This project use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files) to display and animate into canvas.",
   "scripts": {
+    "build": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

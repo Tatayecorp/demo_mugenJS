@@ -1,4 +1,4 @@
-var resource = require('resource');
+import * as resource from './resource';
 
 var requestAnimFrame = (function() {
     return window.requestAnimationFrame    ||
@@ -11,7 +11,7 @@ var requestAnimFrame = (function() {
         };
 })();
 
-class RoundOneJSApp {
+export class RoundOneJSApp {
     constructor(player1, player2, canvasWidth, canvasHeight, zoom) {
         this.player1 = player1;
         this.player2 = player2;
@@ -172,7 +172,3 @@ class RoundOneJSApp {
         this.ctx.scale(this.zoom || 1, this.zoom || 1);
     }
 }
-
-module.exports = {
-    RoundOneJSApp: RoundOneJSApp
-};

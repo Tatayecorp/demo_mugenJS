@@ -1,4 +1,4 @@
-class Player {
+export class Player {
     constructor(resource) {
         this.pos = {
             x: 0,
@@ -37,7 +37,3 @@ class Player {
         return -1;
     }
 }
-
-module.exports = {
-    Player: Player
-};

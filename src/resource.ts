@@ -67,7 +67,7 @@ function decodeACT(buffer) {
     return palette;
 }
 
-function decodePCX(buffer, palette) {
+export function decodePCX(buffer, palette) {
     var o = {};
     var dv = new DataView(buffer);
     var offset = 0;
@@ -343,7 +343,7 @@ function decodeDEF(text) {
     return value;
 }
 
-class Resource {
+export class Resource {
     constructor(path, name) {
         this.path = path;
         this.name = name;
@@ -426,8 +426,3 @@ class Resource {
         });
     }
 }
-
-module.exports = {
-    decodePCX: decodePCX,
-    Resource: Resource
-};

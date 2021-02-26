@@ -1,4 +1,5 @@
 import * as resource from './resource';
+import {Player} from './player';
 
 var requestAnimFrame = (function() {
     return window.requestAnimationFrame    ||
@@ -12,6 +13,18 @@ var requestAnimFrame = (function() {
 })();
 
 export class RoundOneJSApp {
+    player1: Player;
+    player2: Player;
+    canvasWidth: number;
+    canvasHeight: number;
+    zoom: number;
+    fps: number;
+    lastTime: number;
+    ctx: CanvasRenderingContext2D;
+    isGameOver: boolean;
+    gameTime: number;
+    score: number;
+
     constructor(player1, player2, canvasWidth, canvasHeight, zoom) {
         this.player1 = player1;
         this.player2 = player2;

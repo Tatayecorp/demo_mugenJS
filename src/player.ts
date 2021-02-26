@@ -1,4 +1,19 @@
+import {Palette, SFFType} from './resource';
+
+interface Position {
+    x: number;
+    y: number;
+}
+
 export class Player {
+    pos: Position;
+    action: number;
+    currentFrame: number;
+    currentTime: number;
+    right: number;
+    palette: Palette;
+    SFF: SFFType;
+
     constructor(resource) {
         this.pos = {
             x: 0,

@@ -30,8 +30,8 @@ interface SFType {
     samePalette: number;
     image: ArrayBuffer;
 }
-type Palette = number[][];
-interface SFFType {
+export type Palette = number[][];
+export interface SFFType {
     images: SFType[],
     palette: Palette
 }

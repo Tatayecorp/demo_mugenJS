@@ -83,9 +83,9 @@ function decodePalette(buffer) {
     var offset = 0;
     for (var i = 0; i < 256; i++) {
         var c = [];
-        c[0] = dvp.getUint8(offset, true); offset += 1;
-        c[1] = dvp.getUint8(offset, true); offset += 1;
-        c[2] = dvp.getUint8(offset, true); offset += 1;
+        c[0] = dvp.getUint8(offset); offset += 1;
+        c[1] = dvp.getUint8(offset); offset += 1;
+        c[2] = dvp.getUint8(offset); offset += 1;
         palette.push(c);
     }
 
@@ -98,9 +98,9 @@ function decodeACT(buffer) {
     var offset = 0;
     for (var i = 0; i < 256; i++) {
         var c = [];
-        c[0] = dvp.getUint8(offset, true); offset += 1;
-        c[1] = dvp.getUint8(offset, true); offset += 1;
-        c[2] = dvp.getUint8(offset, true); offset += 1;
+        c[0] = dvp.getUint8(offset); offset += 1;
+        c[1] = dvp.getUint8(offset); offset += 1;
+        c[2] = dvp.getUint8(offset); offset += 1;
         palette.unshift(c);
     }
 
@@ -114,10 +114,10 @@ export function decodePCX(buffer, palette) {
     var i;
     var c;
 
-    o.id = dv.getUint8(offset, true); offset += 1;
-    o.version = dv.getUint8(offset, true); offset += 1;
-    o.encoding = dv.getUint8(offset, true); offset += 1;
-    o.bitPerPixel = dv.getUint8(offset, true); offset += 1;
+    o.id = dv.getUint8(offset); offset += 1;
+    o.version = dv.getUint8(offset); offset += 1;
+    o.encoding = dv.getUint8(offset); offset += 1;
+    o.bitPerPixel = dv.getUint8(offset); offset += 1;
     o.x = dv.getUint16(offset, true); offset += 2;
     o.y = dv.getUint16(offset, true); offset += 2;
     o.width = dv.getUint16(offset, true); offset += 2;
@@ -128,27 +128,27 @@ export function decodePCX(buffer, palette) {
     o.colorMap = []; // 16 colors rgb
     for (i = 0; i < 16; i++) {
         c = [];
-        c[0] = dv.getUint8(offset, true); offset += 1;
-        c[1] = dv.getUint8(offset, true); offset += 1;
-        c[2] = dv.getUint8(offset, true); offset += 1;
+        c[0] = dv.getUint8(offset); offset += 1;
+        c[1] = dv.getUint8(offset); offset += 1;
+        c[2] = dv.getUint8(offset); offset += 1;
         o.colorMap.push(c);
     }
 
-    o.reserved = dv.getUint8(offset, true); offset += 1;
-    o.nbPlanes = dv.getUint8(offset, true); offset += 1;
+    o.reserved = dv.getUint8(offset); offset += 1;
+    o.nbPlanes = dv.getUint8(offset); offset += 1;
     o.bpl = dv.getUint16(offset, true); offset += 2;
     o.paletteInfo = dv.getUint16(offset, true); offset += 2;
 
     o.palette = []; // 256 colors rgb
     if (typeof palette === 'undefined') {
         offset = buffer.byteLength - 769;
-        o.signature = dv.getUint8(offset, true); offset += 1; // 12
+        o.signature = dv.getUint8(offset); offset += 1; // 12
 
         for (i = 0; i < 256; i++) {
             c = [];
-            c[0] = dv.getUint8(offset, true); offset += 1;
-            c[1] = dv.getUint8(offset, true); offset += 1;
-            c[2] = dv.getUint8(offset, true); offset += 1;
+            c[0] = dv.getUint8(offset); offset += 1;
+            c[1] = dv.getUint8(offset); offset += 1;
+            c[2] = dv.getUint8(offset); offset += 1;
             o.palette.push(c);
         }
     } else {
@@ -169,12 +169,12 @@ export function decodePCX(buffer, palette) {
     }
 
     while (y < o.height) {
-        var b = dv.getUint8(offset, true); offset += 1;
+        var b = dv.getUint8(offset); offset += 1;
         var runcount;
         var value;
         if ((b & 0xC0) == 0xC0) {
             runcount = (b & 0x3F);
-            value = dv.getUint8(offset, true); offset += 1;
+            value = dv.getUint8(offset); offset += 1;
         } else {
             runcount = 1;
             value = b;
@@ -217,7 +217,7 @@ function decodeSFF(data) {
     o.nbImages = dv.getUint32(offset, true); offset += 4;
     o.posFirstSubFile = dv.getUint32(offset, true); offset += 4;
     o.length = dv.getUint32(offset, true); offset += 4;
-    o.paletteType = dv.getUint8(offset, true); offset += 1;
+    o.paletteType = dv.getUint8(offset); offset += 1;
     o.blank = dv.getString(offset, 3); offset += 3;
     o.comments = dv.getString(offset, 476); offset += 476;
 
@@ -233,7 +233,7 @@ function decodeSFF(data) {
         sf.groupNumber = dv.getUint16(offset, true); offset += 2;
         sf.imageNumber = dv.getUint16(offset, true); offset += 2;
         sf.indexPreviousCopy = dv.getUint16(offset, true); offset += 2;
-        sf.samePalette = dv.getUint8(offset, true); offset += 1;
+        sf.samePalette = dv.getUint8(offset); offset += 1;
         var comments = dv.getString(offset, 14); offset += 14;
         if (sf.indexPreviousCopy == 0) {
             if(sf.samePalette == 0) {

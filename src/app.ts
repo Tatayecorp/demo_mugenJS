@@ -1,4 +1,14 @@
-var resource = require('resource');
+import * as resource from './resource';
+import {Player} from './player';
+
+declare global {
+    interface Window {
+        requestAnimationFrame?: (callback: () => void) => number;
+        mozRequestAnimationFrame?: (callback: () => void) => number;
+        oRequestAnimationFrame?: (callback: () => void) => number;
+        msRequestAnimationFrame?: (callback: () => void) => number;
+    }
+}
 
 var requestAnimFrame = (function() {
     return window.requestAnimationFrame    ||
@@ -11,7 +21,19 @@ var requestAnimFrame = (function() {
         };
 })();
 
-class RoundOneJSApp {
+export class RoundOneJSApp {
+    player1: Player;
+    player2: Player;
+    canvasWidth: number;
+    canvasHeight: number;
+    zoom: number;
+    fps: number;
+    lastTime: number;
+    ctx: CanvasRenderingContext2D;
+    isGameOver: boolean;
+    gameTime: number;
+    score: number;
+
     constructor(player1, player2, canvasWidth, canvasHeight, zoom) {
         this.player1 = player1;
         this.player2 = player2;
@@ -51,7 +73,6 @@ class RoundOneJSApp {
         var now = Date.now();
         var dt = (now - this.lastTime) / 1000.0;
         this.fps = Math.ceil(1000 / (now - this.lastTime));
-        this.update();
         this.render();
 
         this.lastTime = now;
@@ -63,12 +84,6 @@ class RoundOneJSApp {
         this.reset();
         this.lastTime = Date.now();
         this.main();
-    }
-
-    // Update game objects
-    update(dt) {
-        //handleInput(dt);
-        //checkCollisions();
     }
 
     // Draw everything
@@ -172,7 +187,3 @@ class RoundOneJSApp {
         this.ctx.scale(this.zoom || 1, this.zoom || 1);
     }
 }
-
-module.exports = {
-    RoundOneJSApp: RoundOneJSApp
-};

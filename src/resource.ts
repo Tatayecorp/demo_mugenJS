@@ -1,21 +1,100 @@
+interface CLSN {
+    x: number;
+    y: number;
+    x2: number;
+    y2: number;
+}
+interface AIRElement {
+    groupNumber: number;
+    imageNumber: number;
+    x: number;
+    y: number;
+    time: number;
+    clsn1?: CLSN;
+    clsn2?: CLSN;
+}
+interface AIRSingleType {
+    elements: AIRElement[];
+    clsn2Default: CLSN[];
+}
+type AIRType = AIRSingleType[];
+
+interface SFType {
+    x?: number;
+    y?: number;
+    groupNumber?: number;
+    imageNumber?: number;
+    indexPreviousCopy?: number;
+    samePalette?: number;
+    image?: ArrayBuffer;
+}
+export type Palette = number[][];
+export interface SFFType {
+    images: SFType[],
+    palette: Palette
+}
+interface SFFOriginalType {
+    signature?: string;
+    version?: string;
+    nbGroups?: number;
+    nbImages?: number;
+    posFirstSubFile?: number;
+    length?: number;
+    paletteType?: number;
+    blank?: string;
+    comments?: string;
+    SF?: SFType[];
+    palette?: Palette;
+}
+
+type ACTType = Palette;
+
+interface PCXType {
+    id?: number;
+    version?: number;
+    encoding?: number;
+    bitPerPixel?: number;
+    x?: number;
+    y?: number;
+    width?: number;
+    height?: number;
+    hres?: number;
+    vres?: number;
+    colorMap?: Palette;
+    reserved?: number;
+    nbPlanes?: number;
+    bpl?: number;
+    paletteInfo?: number;
+    palette?: Palette;
+    signature?: number;
+}
+
 // For signature & version
-DataView.prototype.getString = function(offset, length) {
+function getStringFromDataView(
+    dataView: DataView,
+    offset: number,
+    length: number
+): string {
     var str = '';
     var charCode;
     for (var i = 0; i < length; i++) {
-        charCode = this.getUint8(i + offset);
+        charCode = dataView.getUint8(i + offset);
         if (charCode === 0) {
             break;
         }
         str += String.fromCharCode(charCode);
     }
     return str;
-};
+}
 
 // For extract dataImage & palette
-DataView.prototype.extractBuffer = function(offset, end) {
-    return this.buffer.slice(offset - 1, end);
-};
+function extractBuffer(
+    dataView: DataView,
+    offset: number,
+    end: number
+): ArrayBuffer {
+    return dataView.buffer.slice(offset - 1, end);
+}
 
 function imageDataToImage(imageData, operation) {
     var canvas = document.createElement('canvas');
@@ -43,9 +122,9 @@ function decodePalette(buffer) {
     var offset = 0;
     for (var i = 0; i < 256; i++) {
         var c = [];
-        c[0] = dvp.getUint8(offset, true); offset += 1;
-        c[1] = dvp.getUint8(offset, true); offset += 1;
-        c[2] = dvp.getUint8(offset, true); offset += 1;
+        c[0] = dvp.getUint8(offset); offset += 1;
+        c[1] = dvp.getUint8(offset); offset += 1;
+        c[2] = dvp.getUint8(offset); offset += 1;
         palette.push(c);
     }
 
@@ -58,26 +137,26 @@ function decodeACT(buffer) {
     var offset = 0;
     for (var i = 0; i < 256; i++) {
         var c = [];
-        c[0] = dvp.getUint8(offset, true); offset += 1;
-        c[1] = dvp.getUint8(offset, true); offset += 1;
-        c[2] = dvp.getUint8(offset, true); offset += 1;
+        c[0] = dvp.getUint8(offset); offset += 1;
+        c[1] = dvp.getUint8(offset); offset += 1;
+        c[2] = dvp.getUint8(offset); offset += 1;
         palette.unshift(c);
     }
 
     return palette;
 }
 
-function decodePCX(buffer, palette) {
-    var o = {};
+export function decodePCX(buffer, palette) {
+    var o: PCXType = {};
     var dv = new DataView(buffer);
     var offset = 0;
     var i;
     var c;
 
-    o.id = dv.getUint8(offset, true); offset += 1;
-    o.version = dv.getUint8(offset, true); offset += 1;
-    o.encoding = dv.getUint8(offset, true); offset += 1;
-    o.bitPerPixel = dv.getUint8(offset, true); offset += 1;
+    o.id = dv.getUint8(offset); offset += 1;
+    o.version = dv.getUint8(offset); offset += 1;
+    o.encoding = dv.getUint8(offset); offset += 1;
+    o.bitPerPixel = dv.getUint8(offset); offset += 1;
     o.x = dv.getUint16(offset, true); offset += 2;
     o.y = dv.getUint16(offset, true); offset += 2;
     o.width = dv.getUint16(offset, true); offset += 2;
@@ -88,27 +167,27 @@ function decodePCX(buffer, palette) {
     o.colorMap = []; // 16 colors rgb
     for (i = 0; i < 16; i++) {
         c = [];
-        c[0] = dv.getUint8(offset, true); offset += 1;
-        c[1] = dv.getUint8(offset, true); offset += 1;
-        c[2] = dv.getUint8(offset, true); offset += 1;
+        c[0] = dv.getUint8(offset); offset += 1;
+        c[1] = dv.getUint8(offset); offset += 1;
+        c[2] = dv.getUint8(offset); offset += 1;
         o.colorMap.push(c);
     }
 
-    o.reserved = dv.getUint8(offset, true); offset += 1;
-    o.nbPlanes = dv.getUint8(offset, true); offset += 1;
+    o.reserved = dv.getUint8(offset); offset += 1;
+    o.nbPlanes = dv.getUint8(offset); offset += 1;
     o.bpl = dv.getUint16(offset, true); offset += 2;
     o.paletteInfo = dv.getUint16(offset, true); offset += 2;
 
     o.palette = []; // 256 colors rgb
     if (typeof palette === 'undefined') {
         offset = buffer.byteLength - 769;
-        o.signature = dv.getUint8(offset, true); offset += 1; // 12
+        o.signature = dv.getUint8(offset); offset += 1; // 12
 
         for (i = 0; i < 256; i++) {
             c = [];
-            c[0] = dv.getUint8(offset, true); offset += 1;
-            c[1] = dv.getUint8(offset, true); offset += 1;
-            c[2] = dv.getUint8(offset, true); offset += 1;
+            c[0] = dv.getUint8(offset); offset += 1;
+            c[1] = dv.getUint8(offset); offset += 1;
+            c[2] = dv.getUint8(offset); offset += 1;
             o.palette.push(c);
         }
     } else {
@@ -129,12 +208,12 @@ function decodePCX(buffer, palette) {
     }
 
     while (y < o.height) {
-        var b = dv.getUint8(offset, true); offset += 1;
+        var b = dv.getUint8(offset); offset += 1;
         var runcount;
         var value;
         if ((b & 0xC0) == 0xC0) {
             runcount = (b & 0x3F);
-            value = dv.getUint8(offset, true); offset += 1;
+            value = dv.getUint8(offset); offset += 1;
         } else {
             runcount = 1;
             value = b;
@@ -167,25 +246,25 @@ function decodePCX(buffer, palette) {
 }
 
 function decodeSFF(data) {
-    var o = {};
+    var o: SFFOriginalType = {};
     var dv = new DataView(data);
     var offset = 0;
 
-    o.signature = dv.getString(offset, 12); offset += 12;
-    o.version = dv.getString(offset, 4); offset += 4;
+    o.signature = getStringFromDataView(dv, offset, 12); offset += 12;
+    o.version = getStringFromDataView(dv, offset, 4); offset += 4;
     o.nbGroups = dv.getUint32(offset, true); offset += 4;
     o.nbImages = dv.getUint32(offset, true); offset += 4;
     o.posFirstSubFile = dv.getUint32(offset, true); offset += 4;
     o.length = dv.getUint32(offset, true); offset += 4;
-    o.paletteType = dv.getUint8(offset, true); offset += 1;
-    o.blank = dv.getString(offset, 3); offset += 3;
-    o.comments = dv.getString(offset, 476); offset += 476;
+    o.paletteType = dv.getUint8(offset); offset += 1;
+    o.blank = getStringFromDataView(dv, offset, 3); offset += 3;
+    o.comments = getStringFromDataView(dv, offset, 476); offset += 476;
 
     o.SF = [];
     var i = 0;
     var pos = o.posFirstSubFile;
     while (i < o.nbImages) {
-        var sf = {};
+        var sf: SFType = {};
         var nextSubFile = dv.getUint32(offset, true); offset += 4;
         var subFileLength = dv.getUint32(offset, true); offset += 4;
         sf.x = dv.getUint16(offset, true); offset += 2;
@@ -193,18 +272,18 @@ function decodeSFF(data) {
         sf.groupNumber = dv.getUint16(offset, true); offset += 2;
         sf.imageNumber = dv.getUint16(offset, true); offset += 2;
         sf.indexPreviousCopy = dv.getUint16(offset, true); offset += 2;
-        sf.samePalette = dv.getUint8(offset, true); offset += 1;
-        var comments = dv.getString(offset, 14); offset += 14;
+        sf.samePalette = dv.getUint8(offset); offset += 1;
+        var comments = getStringFromDataView(dv, offset, 14); offset += 14;
         if (sf.indexPreviousCopy == 0) {
             if(sf.samePalette == 0) {
-                sf.image = dv.extractBuffer(offset, nextSubFile);
+                sf.image = extractBuffer(dv, offset, nextSubFile);
             } else {
-                sf.image = dv.extractBuffer(offset, nextSubFile);
+                sf.image = extractBuffer(dv, offset, nextSubFile);
             }
         }
         if (i == 0) {
             o.palette = decodePalette(
-                dv.extractBuffer(nextSubFile - 767, nextSubFile)
+                extractBuffer(dv, nextSubFile - 767, nextSubFile)
             );
         }
         offset = nextSubFile;
@@ -287,7 +366,7 @@ function decodeAIR(data) {
         } else if (regex.element.test(line)) {
             /* element */
             match = line.match(regex.element);
-            var element = {
+            var element: AIRElement = {
                 groupNumber: +match[1],
                 imageNumber: +match[2],
                 x: +match[3],
@@ -343,19 +422,36 @@ function decodeDEF(text) {
     return value;
 }
 
-class Resource {
+interface DEFFiles {
+    anim: string;
+    sprite: string;
+    pal1: string;
+}
+
+interface DEFLoaded {
+    files: DEFFiles;
+}
+
+export class Resource {
+    path: string;
+    name: string;
+    DEF: DEFLoaded;
+    AIR: AIRType;
+    SFF: SFFType;
+    ACT: ACTType;
+
     constructor(path, name) {
         this.path = path;
         this.name = name;
-        this.DEF = {};
+        this.DEF = {files: null};
         this.AIR = [];
-        this.SFF = {};
+        this.SFF = {images: null, palette: null};
         this.ACT = [];
     }
 
     load() {
         var resource = this;
-        return new Promise(function(resolveAll, reject) {
+        return new Promise<void>(function(resolveAll, reject) {
             // Load DEF
             fetch(
                 resource.path
@@ -368,11 +464,11 @@ class Resource {
                 return response.text();
             }).then(function(text) {
                 return decodeDEF(text);
-            }).then(function(data) {
+            }).then(function(data: DEFLoaded) {
                 resource.DEF = data;
 
                 // Load AIR
-                var pAIR = new Promise(function(resolve, reject) {
+                var pAIR = new Promise<void>(function(resolve, reject) {
                     fetch(
                         resource.path
                         + '/'
@@ -388,7 +484,7 @@ class Resource {
                 });
 
                 // Load SFF
-                var pSFF = new Promise(function(resolve, reject) {
+                var pSFF = new Promise<void>(function(resolve, reject) {
                     fetch(
                         resource.path
                         + '/'
@@ -404,7 +500,7 @@ class Resource {
                 });
 
                 // Load Palette 1, 1st test
-                var pACT = new Promise(function(resolve, reject) {
+                var pACT = new Promise<void>(function(resolve, reject) {
                     fetch(
                         resource.path
                         + '/'
@@ -426,8 +522,3 @@ class Resource {
         });
     }
 }
-
-module.exports = {
-    decodePCX: decodePCX,
-    Resource: Resource
-};

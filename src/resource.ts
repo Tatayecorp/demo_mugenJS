@@ -1,5 +1,3 @@
-type DEFType = Record<string, string|Record<string, string>>;
-
 interface CLSN {
     x: number;
     y: number;
@@ -22,21 +20,54 @@ interface AIRSingleType {
 type AIRType = AIRSingleType[];
 
 interface SFType {
-    x: number;
-    y: number;
-    groupNumber: number;
-    imageNumber: number;
-    indexPreviousCopy: number;
-    samePalette: number;
-    image: ArrayBuffer;
+    x?: number;
+    y?: number;
+    groupNumber?: number;
+    imageNumber?: number;
+    indexPreviousCopy?: number;
+    samePalette?: number;
+    image?: ArrayBuffer;
 }
 export type Palette = number[][];
 export interface SFFType {
     images: SFType[],
     palette: Palette
 }
+interface SFFOriginalType {
+    signature?: string;
+    version?: string;
+    nbGroups?: number;
+    nbImages?: number;
+    posFirstSubFile?: number;
+    length?: number;
+    paletteType?: number;
+    blank?: string;
+    comments?: string;
+    SF?: SFType[];
+    palette?: Palette;
+}
 
 type ACTType = Palette;
+
+interface PCXType {
+    id?: number;
+    version?: number;
+    encoding?: number;
+    bitPerPixel?: number;
+    x?: number;
+    y?: number;
+    width?: number;
+    height?: number;
+    hres?: number;
+    vres?: number;
+    colorMap?: Palette;
+    reserved?: number;
+    nbPlanes?: number;
+    bpl?: number;
+    paletteInfo?: number;
+    palette?: Palette;
+    signature?: number;
+}
 
 // For signature & version
 DataView.prototype.getString = function(offset, length) {
@@ -108,7 +139,7 @@ function decodeACT(buffer) {
 }
 
 export function decodePCX(buffer, palette) {
-    var o = {};
+    var o: PCXType = {};
     var dv = new DataView(buffer);
     var offset = 0;
     var i;
@@ -207,7 +238,7 @@ export function decodePCX(buffer, palette) {
 }
 
 function decodeSFF(data) {
-    var o = {};
+    var o: SFFOriginalType = {};
     var dv = new DataView(data);
     var offset = 0;
 
@@ -383,10 +414,20 @@ function decodeDEF(text) {
     return value;
 }
 
+interface DEFFiles {
+    anim: string;
+    sprite: string;
+    pal1: string;
+}
+
+interface DEFLoaded {
+    files: DEFFiles;
+}
+
 export class Resource {
     path: string;
     name: string;
-    DEF: DEFType;
+    DEF: DEFLoaded;
     AIR: AIRType;
     SFF: SFFType;
     ACT: ACTType;
@@ -394,9 +435,9 @@ export class Resource {
     constructor(path, name) {
         this.path = path;
         this.name = name;
-        this.DEF = {};
+        this.DEF = {files: null};
         this.AIR = [];
-        this.SFF = {};
+        this.SFF = {images: null, palette: null};
         this.ACT = [];
     }
 
@@ -415,7 +456,7 @@ export class Resource {
                 return response.text();
             }).then(function(text) {
                 return decodeDEF(text);
-            }).then(function(data) {
+            }).then(function(data: DEFLoaded) {
                 resource.DEF = data;
 
                 // Load AIR

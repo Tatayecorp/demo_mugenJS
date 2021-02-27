@@ -2,6 +2,8 @@
   "name": "roundonejs_mugen_renderer",
   "version": "1.0.0",
   "description": "This project use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files) to display and animate into canvas.",
+  "main": "lib/index.js",
+  "types": "lib",
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"

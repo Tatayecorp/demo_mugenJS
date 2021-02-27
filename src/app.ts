@@ -64,7 +64,6 @@ export class RoundOneJSApp {
         var now = Date.now();
         var dt = (now - this.lastTime) / 1000.0;
         this.fps = Math.ceil(1000 / (now - this.lastTime));
-        this.update();
         this.render();
 
         this.lastTime = now;
@@ -76,12 +75,6 @@ export class RoundOneJSApp {
         this.reset();
         this.lastTime = Date.now();
         this.main();
-    }
-
-    // Update game objects
-    update(dt) {
-        //handleInput(dt);
-        //checkCollisions();
     }
 
     // Draw everything

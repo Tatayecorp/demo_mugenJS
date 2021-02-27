@@ -451,7 +451,7 @@ export class Resource {
 
     load() {
         var resource = this;
-        return new Promise(function(resolveAll, reject) {
+        return new Promise<void>(function(resolveAll, reject) {
             // Load DEF
             fetch(
                 resource.path
@@ -468,7 +468,7 @@ export class Resource {
                 resource.DEF = data;
 
                 // Load AIR
-                var pAIR = new Promise(function(resolve, reject) {
+                var pAIR = new Promise<void>(function(resolve, reject) {
                     fetch(
                         resource.path
                         + '/'
@@ -484,7 +484,7 @@ export class Resource {
                 });
 
                 // Load SFF
-                var pSFF = new Promise(function(resolve, reject) {
+                var pSFF = new Promise<void>(function(resolve, reject) {
                     fetch(
                         resource.path
                         + '/'
@@ -500,7 +500,7 @@ export class Resource {
                 });
 
                 // Load Palette 1, 1st test
-                var pACT = new Promise(function(resolve, reject) {
+                var pACT = new Promise<void>(function(resolve, reject) {
                     fetch(
                         resource.path
                         + '/'

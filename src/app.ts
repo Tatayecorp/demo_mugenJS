@@ -1,6 +1,15 @@
 import * as resource from './resource';
 import {Player} from './player';
 
+declare global {
+    interface Window {
+        requestAnimationFrame?: (callback: () => void) => number;
+        mozRequestAnimationFrame?: (callback: () => void) => number;
+        oRequestAnimationFrame?: (callback: () => void) => number;
+        msRequestAnimationFrame?: (callback: () => void) => number;
+    }
+}
+
 var requestAnimFrame = (function() {
     return window.requestAnimationFrame    ||
         window.webkitRequestAnimationFrame ||

@@ -70,23 +70,31 @@ interface PCXType {
 }
 
 // For signature & version
-DataView.prototype.getString = function(offset, length) {
+function getStringFromDataView(
+    dataView: DataView,
+    offset: number,
+    length: number
+): string {
     var str = '';
     var charCode;
     for (var i = 0; i < length; i++) {
-        charCode = this.getUint8(i + offset);
+        charCode = dataView.getUint8(i + offset);
         if (charCode === 0) {
             break;
         }
         str += String.fromCharCode(charCode);
     }
     return str;
-};
+}
 
 // For extract dataImage & palette
-DataView.prototype.extractBuffer = function(offset, end) {
-    return this.buffer.slice(offset - 1, end);
-};
+function extractBuffer(
+    dataView: DataView,
+    offset: number,
+    end: number
+): ArrayBuffer {
+    return dataView.buffer.slice(offset - 1, end);
+}
 
 function imageDataToImage(imageData, operation) {
     var canvas = document.createElement('canvas');
@@ -242,15 +250,15 @@ function decodeSFF(data) {
     var dv = new DataView(data);
     var offset = 0;
 
-    o.signature = dv.getString(offset, 12); offset += 12;
-    o.version = dv.getString(offset, 4); offset += 4;
+    o.signature = getStringFromDataView(dv, offset, 12); offset += 12;
+    o.version = getStringFromDataView(dv, offset, 4); offset += 4;
     o.nbGroups = dv.getUint32(offset, true); offset += 4;
     o.nbImages = dv.getUint32(offset, true); offset += 4;
     o.posFirstSubFile = dv.getUint32(offset, true); offset += 4;
     o.length = dv.getUint32(offset, true); offset += 4;
     o.paletteType = dv.getUint8(offset); offset += 1;
-    o.blank = dv.getString(offset, 3); offset += 3;
-    o.comments = dv.getString(offset, 476); offset += 476;
+    o.blank = getStringFromDataView(dv, offset, 3); offset += 3;
+    o.comments = getStringFromDataView(dv, offset, 476); offset += 476;
 
     o.SF = [];
     var i = 0;
@@ -265,17 +273,17 @@ function decodeSFF(data) {
         sf.imageNumber = dv.getUint16(offset, true); offset += 2;
         sf.indexPreviousCopy = dv.getUint16(offset, true); offset += 2;
         sf.samePalette = dv.getUint8(offset); offset += 1;
-        var comments = dv.getString(offset, 14); offset += 14;
+        var comments = getStringFromDataView(dv, offset, 14); offset += 14;
         if (sf.indexPreviousCopy == 0) {
             if(sf.samePalette == 0) {
-                sf.image = dv.extractBuffer(offset, nextSubFile);
+                sf.image = extractBuffer(dv, offset, nextSubFile);
             } else {
-                sf.image = dv.extractBuffer(offset, nextSubFile);
+                sf.image = extractBuffer(dv, offset, nextSubFile);
             }
         }
         if (i == 0) {
             o.palette = decodePalette(
-                dv.extractBuffer(nextSubFile - 767, nextSubFile)
+                extractBuffer(dv, nextSubFile - 767, nextSubFile)
             );
         }
         offset = nextSubFile;

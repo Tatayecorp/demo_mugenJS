@@ -428,8 +428,11 @@ interface DEFFiles {
     pal1: string;
 }
 
-interface DEFLoaded {
+export interface DEFLoaded {
     files: DEFFiles;
+    info: {
+        displayname: string;
+    };
 }
 
 export class Resource {
@@ -443,7 +446,7 @@ export class Resource {
     constructor(path, name) {
         this.path = path;
         this.name = name;
-        this.DEF = {files: null};
+        this.DEF = {files: null, info: null};
         this.AIR = [];
         this.SFF = {images: null, palette: null};
         this.ACT = [];

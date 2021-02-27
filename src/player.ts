@@ -1,4 +1,4 @@
-import {Palette, SFFType} from './resource';
+import {Palette, SFFType, DEFLoaded} from './resource';
 
 interface Position {
     x: number;
@@ -13,6 +13,7 @@ export class Player {
     right: number;
     palette: Palette;
     SFF: SFFType;
+    DEF: DEFLoaded;
 
     constructor(resource) {
         this.pos = {

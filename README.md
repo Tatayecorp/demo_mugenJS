@@ -2,8 +2,6 @@
 
 This project use mugen's files format in JavaScript (DEF, AIR, SFF and ACT files) to display and animate into canvas.
 
-![Capture of RoundOne.js](https://roundonejs.github.io/images/roundonejs.png)
-
 ## About M.U.G.E.N.
 
 M.U.G.E.N is a 2D fighting game engine with many customizable components.
